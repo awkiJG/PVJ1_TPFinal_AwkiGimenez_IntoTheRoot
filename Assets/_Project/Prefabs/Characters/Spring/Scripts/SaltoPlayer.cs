@@ -26,4 +26,8 @@ public class SaltoPlayer : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundLayer);
 
     }
+    public bool IsGrounded()
+    {
+        return isGrounded;
+    }
 }

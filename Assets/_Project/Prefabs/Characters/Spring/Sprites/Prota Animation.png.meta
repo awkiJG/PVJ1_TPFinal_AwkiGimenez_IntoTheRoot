@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: 313c8a954586351429fd9982b9773232
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2217699334384940455
+    second: Prota Animation_0
+  - first:
+      213: 7447904747658958341
+    second: Prota Animation_1
+  - first:
+      213: -2160299404209819883
+    second: Prota Animation_2
+  - first:
+      213: -1475164464113489385
+    second: Prota Animation_3
+  - first:
+      213: 8143641786961547092
+    second: Prota Animation_4
+  - first:
+      213: 7810974188704612196
+    second: Prota Animation_5
+  - first:
+      213: -8277632891579244442
+    second: Prota Animation_6
+  - first:
+      213: 1740275590505410374
+    second: Prota Animation_7
+  - first:
+      213: -2575064464235126716
+    second: Prota Animation_8
+  - first:
+      213: -5169218004382887785
+    second: Prota Animation_9
+  - first:
+      213: 1153281418434084219
+    second: Prota Animation_10
+  - first:
+      213: 2379095060742792195
+    second: Prota Animation_11
+  - first:
+      213: 726130865383061969
+    second: Prota Animation_12
+  - first:
+      213: -6030654825348000134
+    second: Prota Animation_13
+  - first:
+      213: 4546423015425819379
+    second: Prota Animation_14
+  - first:
+      213: 7880045884496229459
+    second: Prota Animation_15
+  - first:
+      213: -4122042186550780335
+    second: Prota Animation_16
+  - first:
+      213: -7372709556644817116
+    second: Prota Animation_17
+  - first:
+      213: 3478817459071210564
+    second: Prota Animation_18
+  - first:
+      213: 6356150282443243418
+    second: Prota Animation_19
+  - first:
+      213: 2593979613684732787
+    second: Prota Animation_20
+  - first:
+      213: -455670505598672900
+    second: Prota Animation_21
+  - first:
+      213: -3296437239266559956
+    second: Prota Animation_22
+  - first:
+      213: 917416906818875265
+    second: Prota Animation_23
+  - first:
+      213: -7869474539845041381
+    second: Prota Animation_24
+  - first:
+      213: 7307363850543155034
+    second: Prota Animation_25
+  - first:
+      213: 935955002640060858
+    second: Prota Animation_26
+  - first:
+      213: -2456085243585528276
+    second: Prota Animation_27
+  - first:
+      213: 4908073859385474201
+    second: Prota Animation_28
+  - first:
+      213: 4538677808767534903
+    second: Prota Animation_29
+  - first:
+      213: -3858022683699420321
+    second: Prota Animation_30
+  - first:
+      213: -2197287474832049932
+    second: Prota Animation_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: quieto_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2303
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a572a47bc9d6ce10800000000000000
+      internalID: 2217699334384940455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quieto_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2303
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 506582548e54c5760800000000000000
+      internalID: 7447904747658958341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quieto_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2303
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51fe59b33231502e0800000000000000
+      internalID: -2160299404209819883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quieto_4
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2303
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a6c335cb9278be0800000000000000
+      internalID: -1475164464113489385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminando_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1974
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45fced1fe07040170800000000000000
+      internalID: 8143641786961547092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminando_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1974
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46fbb7be3a7266c60800000000000000
+      internalID: 7810974188704612196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminando_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1974
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 660645cedb0ff1d80800000000000000
+      internalID: -8277632891579244442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminando_4
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1974
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64fab5fdd63b62810800000000000000
+      internalID: 1740275590505410374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: saltando_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1645
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 440a8875388834cd0800000000000000
+      internalID: -2575064464235126716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: saltando_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1645
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790543adc9f3348b0800000000000000
+      internalID: -5169218004382887785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: saltando_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1645
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d72d7f657410010800000000000000
+      internalID: 1153281418434084219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: saltando_4
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1645
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 304e57e4a5e340120800000000000000
+      internalID: 2379095060742792195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: callendo_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1316
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d9ba93cc2cb31a00800000000000000
+      internalID: 726130865383061969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: callendo_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1316
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a76132c536fce4ca0800000000000000
+      internalID: -6030654825348000134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: callendo_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1316
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f2cd1105a3281f30800000000000000
+      internalID: 4546423015425819379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: callendo_4
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1316
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3543d2f4bfb8b5d60800000000000000
+      internalID: 7880045884496229459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: saltando.caminando_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 987
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e577988709bc6c0800000000000000
+      internalID: -4122042186550780335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: saltando.caminando_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 987
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 427de0478bfdea990800000000000000
+      internalID: -7372709556644817116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: saltando.caminando_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 987
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 444dd562c0e374030800000000000000
+      internalID: 3478817459071210564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: saltando.caminando_4
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 987
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f370c6105953850800000000000000
+      internalID: 6356150282443243418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: callendo.caminando_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 658
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373984417baaff320800000000000000
+      internalID: 2593979613684732787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: callendo.caminando_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 658
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cff1b23e6122da9f0800000000000000
+      internalID: -455670505598672900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: callendo.caminando_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 658
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c28b521dbc3b042d0800000000000000
+      internalID: -3296437239266559956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: callendo.caminando_4
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 658
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18f60e9e0d15bbc00800000000000000
+      internalID: 917416906818875265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: agachado_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 329
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b134e8ba9920ac290800000000000000
+      internalID: -7869474539845041381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: agachado_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 329
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a57c72cb4b8f86560800000000000000
+      internalID: 7307363850543155034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: agachado_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 329
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab15c12bd1e2dfc00800000000000000
+      internalID: 935955002640060858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: agachado_4
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 329
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2e710edb7b3aedd0800000000000000
+      internalID: -2456085243585528276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: agachado.caminando_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99c3d08cb2bfc1440800000000000000
+      internalID: 4908073859385474201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: agachado.caminando_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 737898d8b6f9cfe30800000000000000
+      internalID: 4538677808767534903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: agachado.caminando_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5362b25fcc857ac0800000000000000
+      internalID: -3858022683699420321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: agachado.caminando_4
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f87831feaaa181e0800000000000000
+      internalID: -2197287474832049932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 823130b2bbb02994cbefb97968e38a0c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      agachado.caminando_1: 4908073859385474201
+      agachado.caminando_2: 4538677808767534903
+      agachado.caminando_3: -3858022683699420321
+      agachado.caminando_4: -2197287474832049932
+      agachado_1: -7869474539845041381
+      agachado_2: 7307363850543155034
+      agachado_3: 935955002640060858
+      agachado_4: -2456085243585528276
+      callendo.caminando_1: 2593979613684732787
+      callendo.caminando_2: -455670505598672900
+      callendo.caminando_3: -3296437239266559956
+      callendo.caminando_4: 917416906818875265
+      callendo_1: 726130865383061969
+      callendo_2: -6030654825348000134
+      callendo_3: 4546423015425819379
+      callendo_4: 7880045884496229459
+      caminando_1: 8143641786961547092
+      caminando_2: 7810974188704612196
+      caminando_3: -8277632891579244442
+      caminando_4: 1740275590505410374
+      quieto_1: 2217699334384940455
+      quieto_2: 7447904747658958341
+      quieto_3: -2160299404209819883
+      quieto_4: -1475164464113489385
+      saltando.caminando_1: -4122042186550780335
+      saltando.caminando_2: -7372709556644817116
+      saltando.caminando_3: 3478817459071210564
+      saltando.caminando_4: 6356150282443243418
+      saltando_1: -2575064464235126716
+      saltando_2: -5169218004382887785
+      saltando_3: 1153281418434084219
+      saltando_4: 2379095060742792195
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
