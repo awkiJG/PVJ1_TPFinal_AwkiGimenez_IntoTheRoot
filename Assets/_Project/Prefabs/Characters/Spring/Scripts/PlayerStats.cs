@@ -82,14 +82,18 @@ public class PlayerStats : ScriptableObject
     {
         hasMap = true;
     }
-    
+
     // ---------------------------------------------
     // --- GETTERS ---
     // ---------------------------------------------
-    
+
     public int GetCurrentLives()
     {
         return currentLives;
+    }
+    public int GetMaxLives()
+    {
+        return maxLives;
     }
 
     public int GetCurrentSap()
