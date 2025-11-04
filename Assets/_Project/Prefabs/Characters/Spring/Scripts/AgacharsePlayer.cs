@@ -3,16 +3,16 @@ using UnityEngine;
 public class AgacharsePlayer : MonoBehaviour
 {
     // Variables para el collider cuando está agachado
-    private float crouchHeight;
-    private Vector2 crounchOffset;
+    [SerializeField] private float crouchHeight;
+    [SerializeField] private Vector2 crounchOffset;
     
     // Variables para el collider en posición normal
-    private float originalHeight;
-    private Vector2 originalOffset;
+    [SerializeField] private float originalHeight;
+    [SerializeField] private Vector2 originalOffset;
     
     // Control de estados y referencias
     private LayerMask obstacleLayer;
-    private bool isCrouching = false;
+    [SerializeField] private bool isCrouching = false;
     private bool isGrounded;
     private bool inputAgacharse;
     private CapsuleCollider2D capsuleCollider;
@@ -23,12 +23,12 @@ public class AgacharsePlayer : MonoBehaviour
         capsuleCollider = GetComponent<CapsuleCollider2D>();
 
         // Configurar valores de posición normal
-        originalHeight = 2.3f;
-        originalOffset = new Vector2(capsuleCollider.offset.x, -0.18f);
+        originalHeight = 1.75f;
+        originalOffset = new Vector2(capsuleCollider.offset.x, -0.45f);
 
         // Configurar valores para posición agachado
-        crouchHeight = 1.5f;
-        crounchOffset = new Vector2(capsuleCollider.offset.x, -0.58f);
+        crouchHeight = 1.22f;
+        crounchOffset = new Vector2(capsuleCollider.offset.x, -0.70f);
 
         // Configurar layer de obstáculos
         obstacleLayer = LayerMask.GetMask("Obstacles");

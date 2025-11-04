@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 30a3dd8340bf6814cba9f11c6e14aa20
+guid: 3a3db2dc7c8397648aa45ceb7ca4b34b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6739943185384857235
-    second: trancicion 1-2_0
+      213: -7501782962500476307
+    second: Nivel_1_Arbol_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: trancicion 1-2_0
+      name: Nivel_1_Arbol_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 4960
-        height: 7016
+        width: 4424
+        height: 5790
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 39edd2b0e96198d50800000000000000
-      internalID: 6739943185384857235
+      spriteID: d62e41a442054e790800000000000000
+      internalID: -7501782962500476307
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      trancicion 1-2_0: 6739943185384857235
+      Nivel_1_Arbol_0: -7501782962500476307
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

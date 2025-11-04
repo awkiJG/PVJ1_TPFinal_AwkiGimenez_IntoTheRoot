@@ -3,12 +3,11 @@ using UnityEngine;
 public class SaltoPlayer : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private bool isGrounded;
+    [SerializeField] private bool isGrounded;
     [SerializeField] private float fuerzaSalto;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float groundRadius;
-
     void Start()
     {
         // Obtener referencia al Rigidbody2D
@@ -28,6 +27,12 @@ public class SaltoPlayer : MonoBehaviour
     {
         // Verificar si el jugador está tocando el suelo
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundLayer);
+        
+        // Limitar la velocidad de caída máxima
+        if (rb.linearVelocity.y < -30f)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, -30f);
+        }
     }
     
     // Método público para que otros scripts puedan consultar si está en el suelo
