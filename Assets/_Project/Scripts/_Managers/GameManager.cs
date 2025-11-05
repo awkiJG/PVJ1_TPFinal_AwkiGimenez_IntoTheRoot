@@ -15,23 +15,20 @@ public class GameManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            // DontDestroyOnLoad(gameObject); // Opcional
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
         }
     }
-
-    // --- 3. LA LÓGICA (A---
+    // --- 3. LA LÓGICA ---
     // Este método solo puede ser llamado por esta misma clase.
     private void SetPauseState(bool isPaused)
     {
         IsPaused = isPaused;
         Time.timeScale = isPaused ? 0f : 1f;
     }
-
-
     // --- 4. LA FACHADA ESTÁTICA ---
     // Otros scripts solo pueden llamar a estos métodos estáticos.
     
