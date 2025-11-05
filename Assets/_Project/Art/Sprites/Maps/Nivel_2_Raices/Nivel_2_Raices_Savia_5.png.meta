@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7b88ec53115eed9438a114d14d72b2ae
+guid: 581ae12f0599f3140bdca948b894afb5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5063662224609196766
-    second: Nivel_2_Raices_0
+      213: 3243699067055004185
+    second: Nivel_2_Raices_Savia_5_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Nivel_2_Raices_0
+      name: Nivel_2_Raices_Savia_5_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 9738
-        height: 5606
+        width: 571
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 225ca9ff8024ab9b0800000000000000
-      internalID: -5063662224609196766
+      spriteID: 91a541a9d1fe30d20800000000000000
+      internalID: 3243699067055004185
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Nivel_2_Raices_0: -5063662224609196766
+      Nivel_2_Raices_Savia_5_0: 3243699067055004185
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
