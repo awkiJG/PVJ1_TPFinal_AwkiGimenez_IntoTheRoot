@@ -130,7 +130,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -165,7 +165,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -193,7 +193,249 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: quieto_1
+      name: Prota Animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3290
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fe439b29324e834684dfef2b4682311
+      internalID: -166530588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota Animation_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3290
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a447d457f0c5443bd6d8e4665f3877
+      internalID: 1548055576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota Animation_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3290
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06982ce3bbf0ccf439471757855a295b
+      internalID: -1200645820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota Animation_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3290
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa134a80159562f419e01c375cd0fd7b
+      internalID: 1613664843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota Animation_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2961
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91d45af3129da940b65eb98dc8c193e
+      internalID: -1122417731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota Animation_5
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2961
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e45e8b0e9de6442b8ca2b2583180d3
+      internalID: -1323557775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota Animation_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2961
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec0a8b4cf627df44bf051eb8074d9ec
+      internalID: -1424403856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota Animation_7
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2961
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4504c6b78c37e046aac244d75a90769
+      internalID: -1817146196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota Animation_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2632
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77265931c9d72f4ba68e4da7714ac02
+      internalID: -1484880325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota Animation_9
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2632
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133eb6cd9de0db542bb9ec617dee06be
+      internalID: 582506745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota Animation_10
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2632
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b4edca366aa6745bef4afcbc06c2e6
+      internalID: 368191072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota Animation_11
       rect:
         serializedVersion: 2
         x: 0
@@ -201,21 +443,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7a572a47bc9d6ce10800000000000000
-      internalID: 2217699334384940455
+      spriteID: c738cd0bf826b7941a1540a39b893936
+      internalID: -1785216585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: quieto_2
+      name: Prota Animation_12
       rect:
         serializedVersion: 2
         x: 300
@@ -223,21 +465,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 506582548e54c5760800000000000000
-      internalID: 7447904747658958341
+      spriteID: 5e205acf842135846bdc30b89924c4a8
+      internalID: 556679966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: quieto_3
+      name: Prota Animation_13
       rect:
         serializedVersion: 2
         x: 600
@@ -245,21 +487,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 51fe59b33231502e0800000000000000
-      internalID: -2160299404209819883
+      spriteID: e09071f1e9c3910478b29d7ac1631593
+      internalID: -1667137825
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: quieto_4
+      name: Prota Animation_14
       rect:
         serializedVersion: 2
         x: 900
@@ -267,21 +509,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 71a6c335cb9278be0800000000000000
-      internalID: -1475164464113489385
+      spriteID: 12c7f5b0ea210db4b821bb1c65700f91
+      internalID: -778887190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caminando_1
+      name: Prota Animation_15
       rect:
         serializedVersion: 2
         x: 0
@@ -289,21 +531,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 45fced1fe07040170800000000000000
-      internalID: 8143641786961547092
+      spriteID: 8b04191f405e0f344a725810d35c6b2f
+      internalID: -393700267
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caminando_2
+      name: Prota Animation_16
       rect:
         serializedVersion: 2
         x: 300
@@ -311,21 +553,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 46fbb7be3a7266c60800000000000000
-      internalID: 7810974188704612196
+      spriteID: da6bdd63a3045e94a808746f1f4ded88
+      internalID: -1593528760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caminando_3
+      name: Prota Animation_17
       rect:
         serializedVersion: 2
         x: 600
@@ -333,21 +575,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 660645cedb0ff1d80800000000000000
-      internalID: -8277632891579244442
+      spriteID: 5f62ca67de8f9ac4eaa599ba9dd29540
+      internalID: 1877113603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caminando_4
+      name: Prota Animation_18
       rect:
         serializedVersion: 2
         x: 900
@@ -355,21 +597,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 64fab5fdd63b62810800000000000000
-      internalID: 1740275590505410374
+      spriteID: deffed9a4774b0c4785de67df554a494
+      internalID: -576282343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: saltando_1
+      name: Prota Animation_19
       rect:
         serializedVersion: 2
         x: 0
@@ -377,21 +619,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 440a8875388834cd0800000000000000
-      internalID: -2575064464235126716
+      spriteID: 67bfaebe0f922a0449d28ac2d32f0965
+      internalID: -1952628089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: saltando_2
+      name: Prota Animation_20
       rect:
         serializedVersion: 2
         x: 300
@@ -399,21 +641,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 790543adc9f3348b0800000000000000
-      internalID: -5169218004382887785
+      spriteID: 49519a528ff8c0241a38ac3f44ee080d
+      internalID: 2059760589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: saltando_3
+      name: Prota Animation_21
       rect:
         serializedVersion: 2
         x: 600
@@ -421,21 +663,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b7d72d7f657410010800000000000000
-      internalID: 1153281418434084219
+      spriteID: ae35a115ec38f714a9129cf6dc603ac8
+      internalID: -247967069
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: saltando_4
+      name: Prota Animation_22
       rect:
         serializedVersion: 2
         x: 900
@@ -443,21 +685,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 304e57e4a5e340120800000000000000
-      internalID: 2379095060742792195
+      spriteID: ef671b5d80e34754eba84f944f2d4397
+      internalID: -1104158084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: callendo_1
+      name: Prota Animation_23
       rect:
         serializedVersion: 2
         x: 0
@@ -465,21 +707,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1d9ba93cc2cb31a00800000000000000
-      internalID: 726130865383061969
+      spriteID: 76af0bcd051f66b4bbe78e9150e4c8cb
+      internalID: 705420481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: callendo_2
+      name: Prota Animation_24
       rect:
         serializedVersion: 2
         x: 300
@@ -487,21 +729,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a76132c536fce4ca0800000000000000
-      internalID: -6030654825348000134
+      spriteID: 4f7ac8560a318204e82f781b15c63593
+      internalID: 1505971299
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: callendo_3
+      name: Prota Animation_25
       rect:
         serializedVersion: 2
         x: 600
@@ -509,21 +751,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3f2cd1105a3281f30800000000000000
-      internalID: 4546423015425819379
+      spriteID: 343dc4679982f854a83187de40ecaeb8
+      internalID: 644520440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: callendo_4
+      name: Prota Animation_26
       rect:
         serializedVersion: 2
         x: 900
@@ -531,21 +773,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3543d2f4bfb8b5d60800000000000000
-      internalID: 7880045884496229459
+      spriteID: 83666993b476af943a9c9abcca4a453d
+      internalID: -75141656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: saltando.caminando_1
+      name: Prota Animation_27
       rect:
         serializedVersion: 2
         x: 0
@@ -553,21 +795,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 15e577988709bc6c0800000000000000
-      internalID: -4122042186550780335
+      spriteID: 5bce726b62cf2c343bad718960e4fe6d
+      internalID: -1246593602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: saltando.caminando_2
+      name: Prota Animation_28
       rect:
         serializedVersion: 2
         x: 300
@@ -575,21 +817,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 427de0478bfdea990800000000000000
-      internalID: -7372709556644817116
+      spriteID: 321728a4910d2004ab5d1a5bdd5e55b7
+      internalID: -13529967
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: saltando.caminando_3
+      name: Prota Animation_29
       rect:
         serializedVersion: 2
         x: 600
@@ -597,21 +839,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 444dd562c0e374030800000000000000
-      internalID: 3478817459071210564
+      spriteID: 39097ff9305871b4d90dba8c37cb76f4
+      internalID: -1525057962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: saltando.caminando_4
+      name: Prota Animation_30
       rect:
         serializedVersion: 2
         x: 900
@@ -619,21 +861,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a9f370c6105953850800000000000000
-      internalID: 6356150282443243418
+      spriteID: 0952d9052e9502b4e939cd62ca0b964d
+      internalID: 455350056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: callendo.caminando_1
+      name: Prota Animation_31
       rect:
         serializedVersion: 2
         x: 0
@@ -641,21 +883,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 373984417baaff320800000000000000
-      internalID: 2593979613684732787
+      spriteID: 6f37dce92f82b1c49b34e0ab9ada9950
+      internalID: -352845752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: callendo.caminando_2
+      name: Prota Animation_32
       rect:
         serializedVersion: 2
         x: 300
@@ -663,21 +905,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cff1b23e6122da9f0800000000000000
-      internalID: -455670505598672900
+      spriteID: 25f1f36ad0236f84c89a5849c6074d70
+      internalID: -607322009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: callendo.caminando_3
+      name: Prota Animation_33
       rect:
         serializedVersion: 2
         x: 600
@@ -685,21 +927,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c28b521dbc3b042d0800000000000000
-      internalID: -3296437239266559956
+      spriteID: a3edd0ef5006cd24bbc8f19db335a9ac
+      internalID: 2135696843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: callendo.caminando_4
+      name: Prota Animation_34
       rect:
         serializedVersion: 2
         x: 900
@@ -707,21 +949,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 18f60e9e0d15bbc00800000000000000
-      internalID: 917416906818875265
+      spriteID: b8f60b55ebcb40d40b07dfbb4f00eda6
+      internalID: -548041571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agachado_1
+      name: Prota Animation_35
       rect:
         serializedVersion: 2
         x: 0
@@ -729,21 +971,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b134e8ba9920ac290800000000000000
-      internalID: -7869474539845041381
+      spriteID: 909097e81b9484642adb9f16d9dade7b
+      internalID: -668556989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agachado_2
+      name: Prota Animation_36
       rect:
         serializedVersion: 2
         x: 300
@@ -751,21 +993,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a57c72cb4b8f86560800000000000000
-      internalID: 7307363850543155034
+      spriteID: 4e7e758e5ef4ffa47852261c776823d9
+      internalID: -481623803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agachado_3
+      name: Prota Animation_37
       rect:
         serializedVersion: 2
         x: 600
@@ -773,21 +1015,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ab15c12bd1e2dfc00800000000000000
-      internalID: 935955002640060858
+      spriteID: 919041cc19f74434bbc3906680104f9c
+      internalID: 1036856443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agachado_4
+      name: Prota Animation_38
       rect:
         serializedVersion: 2
         x: 900
@@ -795,21 +1037,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c2e710edb7b3aedd0800000000000000
-      internalID: -2456085243585528276
+      spriteID: 1843bbe3aba428a48bfb201ecc986c6f
+      internalID: -26707557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agachado.caminando_1
+      name: Prota Animation_39
       rect:
         serializedVersion: 2
         x: 0
@@ -817,21 +1059,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 99c3d08cb2bfc1440800000000000000
-      internalID: 4908073859385474201
+      spriteID: 6b21056aee8025043b09a14628e41154
+      internalID: -1745591611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agachado.caminando_2
+      name: Prota Animation_40
       rect:
         serializedVersion: 2
         x: 300
@@ -839,21 +1081,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 737898d8b6f9cfe30800000000000000
-      internalID: 4538677808767534903
+      spriteID: d290c4ec0435ca1448f343e7fe60048a
+      internalID: -303360686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agachado.caminando_3
+      name: Prota Animation_41
       rect:
         serializedVersion: 2
         x: 600
@@ -861,21 +1103,21 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f5362b25fcc857ac0800000000000000
-      internalID: -3858022683699420321
+      spriteID: 53aa7dc3c228553419470fcffb889156
+      internalID: 1987440631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: agachado.caminando_4
+      name: Prota Animation_42
       rect:
         serializedVersion: 2
         x: 900
@@ -883,15 +1125,37 @@ TextureImporter:
         width: 300
         height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4f87831feaaa181e0800000000000000
-      internalID: -2197287474832049932
+      spriteID: 19e3818a070c34f498ac3ae4e722cd51
+      internalID: -1632068674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota Animation_43
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 2632
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035ae659456600543a17c324566f5065
+      internalID: 1255941102
       vertices: []
       indices: 
       edges: []
@@ -910,38 +1174,50 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      agachado.caminando_1: 4908073859385474201
-      agachado.caminando_2: 4538677808767534903
-      agachado.caminando_3: -3858022683699420321
-      agachado.caminando_4: -2197287474832049932
-      agachado_1: -7869474539845041381
-      agachado_2: 7307363850543155034
-      agachado_3: 935955002640060858
-      agachado_4: -2456085243585528276
-      callendo.caminando_1: 2593979613684732787
-      callendo.caminando_2: -455670505598672900
-      callendo.caminando_3: -3296437239266559956
-      callendo.caminando_4: 917416906818875265
-      callendo_1: 726130865383061969
-      callendo_2: -6030654825348000134
-      callendo_3: 4546423015425819379
-      callendo_4: 7880045884496229459
-      caminando_1: 8143641786961547092
-      caminando_2: 7810974188704612196
-      caminando_3: -8277632891579244442
-      caminando_4: 1740275590505410374
-      quieto_1: 2217699334384940455
-      quieto_2: 7447904747658958341
-      quieto_3: -2160299404209819883
-      quieto_4: -1475164464113489385
-      saltando.caminando_1: -4122042186550780335
-      saltando.caminando_2: -7372709556644817116
-      saltando.caminando_3: 3478817459071210564
-      saltando.caminando_4: 6356150282443243418
-      saltando_1: -2575064464235126716
-      saltando_2: -5169218004382887785
-      saltando_3: 1153281418434084219
-      saltando_4: 2379095060742792195
+      Prota Animation_0: -166530588
+      Prota Animation_1: 1548055576
+      Prota Animation_10: 368191072
+      Prota Animation_11: -1785216585
+      Prota Animation_12: 556679966
+      Prota Animation_13: -1667137825
+      Prota Animation_14: -778887190
+      Prota Animation_15: -393700267
+      Prota Animation_16: -1593528760
+      Prota Animation_17: 1877113603
+      Prota Animation_18: -576282343
+      Prota Animation_19: -1952628089
+      Prota Animation_2: -1200645820
+      Prota Animation_20: 2059760589
+      Prota Animation_21: -247967069
+      Prota Animation_22: -1104158084
+      Prota Animation_23: 705420481
+      Prota Animation_24: 1505971299
+      Prota Animation_25: 644520440
+      Prota Animation_26: -75141656
+      Prota Animation_27: -1246593602
+      Prota Animation_28: -13529967
+      Prota Animation_29: -1525057962
+      Prota Animation_3: 1613664843
+      Prota Animation_30: 455350056
+      Prota Animation_31: -352845752
+      Prota Animation_32: -607322009
+      Prota Animation_33: 2135696843
+      Prota Animation_34: -548041571
+      Prota Animation_35: -668556989
+      Prota Animation_36: -481623803
+      Prota Animation_37: 1036856443
+      Prota Animation_38: -26707557
+      Prota Animation_39: -1745591611
+      Prota Animation_4: -1122417731
+      Prota Animation_40: -303360686
+      Prota Animation_41: 1987440631
+      Prota Animation_42: -1632068674
+      Prota Animation_43: 1255941102
+      Prota Animation_5: -1323557775
+      Prota Animation_6: -1424403856
+      Prota Animation_7: -1817146196
+      Prota Animation_8: -1484880325
+      Prota Animation_9: 582506745
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
