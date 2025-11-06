@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
     // 2. EL ESTADO 
     public bool IsPaused { get; private set; }
+    public bool isInputLocked { get; private set; }
 
     private void Awake()
     {
@@ -29,9 +30,13 @@ public class GameManager : MonoBehaviour
         IsPaused = isPaused;
         Time.timeScale = isPaused ? 0f : 1f;
     }
-    // --- 4. LA FACHADA ESTÁTICA ---
+
+    private void SetInputLock(bool isLocked)
+    {
+        isInputLocked = isLocked;
+    }
     // Otros scripts solo pueden llamar a estos métodos estáticos.
-    
+
     /// <summary>
     /// Solicita al GameManager que cambie el estado de pausa.
     /// </summary>
@@ -43,16 +48,33 @@ public class GameManager : MonoBehaviour
             instance.SetPauseState(isPaused);
         }
     }
-
+    
     /// <summary>
-    /// Devuelve el estado actual de la pausa.
+    /// Solicita un BLOQUEO DE INPUT (Cinemáticas/Muerte).
+    /// El tiempo sigue corriendo.
     /// </summary>
+    public static void RequestInputLock(bool isLocked)
+    {
+        if (instance != null)
+        {
+            instance.SetInputLock(isLocked);
+        }
+    }
+
     public static bool GetIsPaused()
     {
         if (instance != null)
         {
             return instance.IsPaused;
         }
-        return false; // Estado seguro por defecto si no hay instancia
+        return false; 
+    }
+    public static bool IsInputLocked()
+    {
+        if (instance != null)
+        {
+            return instance.isInputLocked;
+        }
+        return false;
     }
 }

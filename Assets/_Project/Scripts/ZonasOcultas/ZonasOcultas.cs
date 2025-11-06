@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ZonasOcultas : MonoBehaviour
 {
-    [SerializeField] private float tiempoDesvanecimiento = 1f; // Tiempo para desvanecerse
+    private float tiempoDesvanecimiento = 0.5f; // Tiempo para desvanecerse
     private SpriteRenderer spriteRenderer;
     private bool yaActivado = false; // Para evitar múltiples activaciones
 

@@ -37,6 +37,11 @@ public class AgacharsePlayer : MonoBehaviour
 
     void Update()
     {
+        //Verifica si estan abilitados los inputs
+        if (GameManager.IsInputLocked())
+    {
+        return; // Salir inmediatamente
+    }
         // Capturar input del jugador y verificar si está en el suelo
         inputAgacharse = Input.GetKey(KeyCode.LeftControl);
         isGrounded = GetComponent<SaltoPlayer>().IsGrounded();

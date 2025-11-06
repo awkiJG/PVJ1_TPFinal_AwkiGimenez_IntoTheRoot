@@ -7,6 +7,11 @@ public class MovimientoPlayer : MonoBehaviour
 
     void Update()
     {
+        //Verifica si estan abilitados los inputs
+        if (GameManager.IsInputLocked())
+    {
+        return; // Salir inmediatamente
+    }
         // Capturar input horizontal (-1 a 1)
         direccion = Input.GetAxis("Horizontal");
 

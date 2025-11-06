@@ -224,8 +224,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278236926
+  m_fontColor: {r: 0.9960785, g: 0.7137255, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -296,7 +296,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5469050093463880056}
   - component: {fileID: 5718353777673382250}
-  - component: {fileID: 6268248070731362638}
   - component: {fileID: 8201698529319999858}
   m_Layer: 5
   m_Name: Panel_HUD
@@ -336,36 +335,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3675614978245201521}
   m_CullTransparentMesh: 1
---- !u!114 &6268248070731362638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3675614978245201521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!114 &8201698529319999858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,11 +347,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d1f3f222bb31ef49b3583bd52e8c1f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerStats: {fileID: 0}
-  livesDisplayImage: {fileID: 0}
-  livesSprites: []
-  sapCounterText: {fileID: 0}
-  mapIconObject: {fileID: 0}
+  playerStats: {fileID: 11400000, guid: 1baaa2bc4d425624fa93cdf08e82e64e, type: 2}
+  livesDisplayImage: {fileID: 1458287669711792140}
+  livesSprites:
+  - {fileID: -1019553012740705768, guid: 76dce8ba345e82e48a2bfe6f7bf1a409, type: 3}
+  - {fileID: -1420967159864690147, guid: 5cc03eebdd967e74ab8c089b4a5bac9e, type: 3}
+  - {fileID: 8693385468386279027, guid: 20a2ac8e3e1d7a549a8a5d5a8e764e05, type: 3}
+  - {fileID: -5399455590396832397, guid: 5e92e6145f1d72a458421c8f081ac40f, type: 3}
+  sapCounterText: {fileID: 890287554896178709}
+  mapIconObject: {fileID: 2226160638096742877}
 --- !u!1 &5702587734032296107
 GameObject:
   m_ObjectHideFlags: 0

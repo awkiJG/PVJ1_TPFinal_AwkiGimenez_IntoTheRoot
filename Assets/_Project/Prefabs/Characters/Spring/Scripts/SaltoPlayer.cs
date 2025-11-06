@@ -16,6 +16,11 @@ public class SaltoPlayer : MonoBehaviour
 
     void Update()
     {
+        //Verifica si estan abilitados los inputs
+        if (GameManager.IsInputLocked())
+    {
+        return; // Salir inmediatamente
+    }
         // Ejecutar salto si está en el suelo y presiona el botón de salto
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
