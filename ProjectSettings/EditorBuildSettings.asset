@@ -8,6 +8,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/_Project/Scenes/Nivel_1_Arbol.unity
+    guid: 205e7f9639eef164a923177ef9793221
+  - enabled: 1
+    path: Assets/_Project/Scenes/Nivel_2_Raices.unity
+    guid: a3da340003fb1284c9382119562330a6
+  - enabled: 1
+    path: Assets/_Project/Scenes/Nivel_3_Purificacion.unity
+    guid: 44c45e2d2b8b6cf4c9d55d81cb10ec4b
+  - enabled: 1
+    path: Assets/_Project/Scenes/MainMenu.unity
+    guid: 9327d50aa52c4514690dee803dae25c3
+  - enabled: 1
+    path: Assets/_Project/Scenes/GameOverScene.unity
+    guid: e3246618c8f3d6c4687528fc26cb8ebc
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 8afd22ace3df4a04dbd205bef3f4c60a, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

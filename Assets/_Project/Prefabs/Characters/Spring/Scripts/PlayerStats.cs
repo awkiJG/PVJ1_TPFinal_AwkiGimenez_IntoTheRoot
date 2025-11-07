@@ -15,6 +15,7 @@ public class PlayerStats : ScriptableObject
     [SerializeField] private int currentLives;
     [SerializeField] private int currentSap;
     [SerializeField] private bool hasMap;
+    [HideInInspector] private string entryPointID;
 
     // ---------------------------------------------
     // --- MÉTODOS DE INICIALIZACIÓN Y RESETEO ---
@@ -54,6 +55,11 @@ public class PlayerStats : ScriptableObject
         {
             currentSap += amount;
         }
+    }
+
+    public void SetEntryPointID(string id)
+    {
+        entryPointID = id;
     }
 
     /// <summary>
@@ -104,5 +110,9 @@ public class PlayerStats : ScriptableObject
     public bool HasMap()
     {
         return hasMap;
+    }
+    public string GetEntryPointID()
+    {
+        return entryPointID;
     }
 }
