@@ -15,6 +15,6 @@ MonoBehaviour:
   maxLives: 3
   defaultSap: 0
   defaultHasMap: 0
-  currentLives: 0
-  currentSap: 33
+  currentLives: 43
+  currentSap: 38
   hasMap: 0
