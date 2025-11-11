@@ -78,10 +78,22 @@ public class PlayerStats : ScriptableObject
             // Aquí se dispararía el evento para curar al árbol o activar la UI
             return true;
         }
-        
+
         // 3. Fallo
         Debug.Log($"Fallo al liberar savia. Necesario: {amount}, Actual: {currentSap}");
         return false;
+    }
+
+    public void SetSap(int amount)
+    {
+        if (amount >= 0)
+        {
+            currentSap = amount;
+        }
+    }
+    public void SetHasMap(bool hasMapItem)
+    {
+        hasMap = hasMapItem;
     }
 
     public void GrantMap()
