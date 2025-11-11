@@ -7,6 +7,7 @@ public class MenuNiveles : UIPanel
     [SerializeField] private Button botonNivel1;
     [SerializeField] private Button botonNivel2;
     [SerializeField] private Button botonNivel3;
+    [SerializeField] private Button botonNivel4;
     [SerializeField] private Button botonAtras;
     [SerializeField] private GestorMenu gestor;
     public override void Mostrar()
@@ -24,7 +25,10 @@ public class MenuNiveles : UIPanel
         botonNivel2.onClick.AddListener(() => SceneManager.LoadScene("Nivel_2_Raices"));
 
         botonNivel3.onClick.RemoveAllListeners();
-        botonNivel3.onClick.AddListener(() => SceneManager.LoadScene("Nivel_3_Purificacion"));
+        botonNivel3.onClick.AddListener(() => SceneManager.LoadScene("Nivel_3_Mosquitos"));
+
+        botonNivel4.onClick.RemoveAllListeners();
+        botonNivel4.onClick.AddListener(() => SceneManager.LoadScene("Nivel_4_Purificacion"));
 
         botonAtras.onClick.RemoveAllListeners();
         botonAtras.onClick.AddListener(() => gestor.MostrarPanel(0));
@@ -49,6 +53,9 @@ public class MenuNiveles : UIPanel
 
         // El Nivel 3 solo si el progreso es 3 o más
         botonNivel3.interactable = (highestLevel >= 3);
+
+        // El Nivel 4 solo si el progreso es 4 o más
+        botonNivel4.interactable = (highestLevel >= 4);
     }
     private void Update()
     {
@@ -75,6 +82,15 @@ public class MenuNiveles : UIPanel
         {
             Debug.Log("TEST: Desbloqueando Nivel 3.");
             PlayerPrefs.SetInt("HighestLevelReached", 3);
+            PlayerPrefs.Save();
+            OnEnable();
+        }
+
+        // Presiona F4 para desbloquear el Nivel 4
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            Debug.Log("TEST: Desbloqueando Nivel 4.");
+            PlayerPrefs.SetInt("HighestLevelReached", 4);
             PlayerPrefs.Save();
             OnEnable();
         }

@@ -1,6 +1,5 @@
 using UnityEngine;
 
-// Define el "contrato" para todas las estrategias de movimiento.
 // Su única tarea es mover el Transform del mosquito.
 public abstract class IMovimientoEstrategia
 {
