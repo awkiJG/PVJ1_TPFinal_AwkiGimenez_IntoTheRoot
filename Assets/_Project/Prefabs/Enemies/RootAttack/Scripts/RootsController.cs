@@ -13,7 +13,7 @@ public class RootsController : MonoBehaviour
         yield return new WaitForSeconds(2f);
         roots[0].ActivateAttack(-25f, 25f, 4f);
         yield return new WaitForSeconds(1f);
-        roots[1].ActivateAttack(-20f, 25f, 2f);
+        roots[1].ActivateAttack(-30f, 25f, 2f);
         yield return new WaitForSeconds(1f);
         roots[2].ActivateAttack(-20f, 40f, 2f);
         yield return new WaitForSeconds(0.2f);
