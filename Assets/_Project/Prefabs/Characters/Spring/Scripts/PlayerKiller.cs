@@ -16,9 +16,10 @@ public class PlayerKiller : MonoBehaviour
         isInvincible = true;
         // aplicar daño
         playerStats.TakeDamage(1);
-        GameManager.RequestInputLock(true); 
+        GameManager.RequestInputLock(true);
         // Iniciar corrutinas de muerte
         StartCoroutine(DeathSequence());
+        GetComponent<Rigidbody2D>().simulated = false;
     }
     // Corrutina que reproduce la animación de muerte y luego dispara el fade UI
     public IEnumerator DeathSequence()
