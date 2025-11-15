@@ -20,6 +20,8 @@ public class LevelStartLogic : MonoBehaviour
         else if (playerStats.GetEntryPointID() == "Nivel_3_Mosquitos")
         {
             playerRigidbody.linearVelocity = new Vector2(0f, -30f);
+            playerStats.SetHasMap(false);
+
         }
     }
 }
