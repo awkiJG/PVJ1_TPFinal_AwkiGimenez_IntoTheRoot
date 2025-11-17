@@ -18,6 +18,7 @@ public class HUDManager : MonoBehaviour
     [Header("Visuales de Savia y Mapa")]
     [SerializeField] private TextMeshProUGUI sapCounterText;
     [SerializeField] private GameObject mapIconObject;
+    [SerializeField] private GameObject eggIconObject;
 
     // ---  LÓGICA DE ACTUALIZACIÓN ---
     private void Update()
@@ -25,6 +26,7 @@ public class HUDManager : MonoBehaviour
         UpdateLives();
         UpdateSap();
         UpdateMap();
+        UpdateEgg();
     }
 
     private void UpdateLives()
@@ -76,4 +78,20 @@ public class HUDManager : MonoBehaviour
             }
         }
     }
+
+    private void UpdateEgg()
+    {
+        // 1. Obtener el estado del huevo de forma encapsulada (Getter)
+        bool hasEgg = playerStats.HasMosquitoEgg();
+        
+        // 2. Activar o desactivar el GameObject del ícono
+        if (eggIconObject != null)
+        {
+            // Solo actualizamos si el estado es diferente para evitar llamadas innecesarias
+            if (eggIconObject.activeSelf != hasEgg)
+            {
+                eggIconObject.SetActive(hasEgg);
+            }
+        }
+    }   
 }
