@@ -3,8 +3,8 @@ using UnityEngine;
 public class MosquitoController : MonoBehaviour
 {
     [Header("Configuración")]
-    [SerializeField] private float _patrolSpeed = 2f;
-    [SerializeField] private float _chargeSpeed = 50f;
+    [SerializeField] private float _patrolSpeed;
+    [SerializeField] private float _chargeSpeed;
     [Tooltip("Tag de los objetos que marcan el fin de la patrulla (Puntos A/B)")]
     [SerializeField] private Animator animator;
 
@@ -32,7 +32,6 @@ public class MosquitoController : MonoBehaviour
     // --- Detección de Puntos de Patrulla ---
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Mosquito tocó: " + other.name);
         // Si tocamos un "PatrolPoint"...
         if (other.CompareTag("PatrolPoint"))
         {

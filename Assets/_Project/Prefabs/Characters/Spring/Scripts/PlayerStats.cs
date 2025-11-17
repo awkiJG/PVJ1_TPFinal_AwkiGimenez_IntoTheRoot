@@ -10,11 +10,13 @@ public class PlayerStats : ScriptableObject
     [SerializeField] private int maxLives = 3;
     [SerializeField] private int defaultSap = 0;
     [SerializeField] private bool defaultHasMap = false;
+    [SerializeField] private bool defaultHasMosquitoEgg = false;
 
     [Header("Estado Actual del Jugador")]
     [SerializeField] private int currentLives;
     [SerializeField] private int currentSap;
     [SerializeField] private bool hasMap;
+    [SerializeField] private bool hasMosquitoEgg;
     [HideInInspector] private string entryPointID;
 
     // ---------------------------------------------
@@ -26,6 +28,7 @@ public class PlayerStats : ScriptableObject
         currentLives = maxLives;
         currentSap = defaultSap;
         hasMap = defaultHasMap;
+        hasMosquitoEgg = defaultHasMosquitoEgg;
         
         Debug.Log("PlayerStats reseteado: Valores de inicio de partida.");
     }
@@ -100,6 +103,10 @@ public class PlayerStats : ScriptableObject
     {
         hasMap = true;
     }
+    public void SetHasMosquitoEgg(bool hasEgg)
+    {
+        hasMosquitoEgg = hasEgg;
+    }
 
     // ---------------------------------------------
     // --- GETTERS ---
@@ -122,6 +129,10 @@ public class PlayerStats : ScriptableObject
     public bool HasMap()
     {
         return hasMap;
+    }
+    public bool HasMosquitoEgg()
+    {
+        return hasMosquitoEgg;
     }
     public string GetEntryPointID()
     {

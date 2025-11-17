@@ -16,19 +16,14 @@ public class GusanoN2Controller : MonoBehaviour
     private bool completado = false; // Para que solo se active una vez
 
     private Coroutine dialogoCoroutine; // Para detener el diálogo si el jugador se va
-
     // --- Detección del Jugador (Triggers) ---
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Si la misión ya se completó o no es el Player, ignorar.
         if (other.CompareTag("Player"))
         {
-
             if (completado) return;
-
             jugadorEnRango = true;
-
             // Si es la primera vez que entra, iniciar saludo.
             if (!haSaludado)
             {
@@ -69,15 +64,7 @@ public class GusanoN2Controller : MonoBehaviour
         if (GameManager.IsInputLocked()) return;
         // 1. Gestionar el aviso de Interacción ('E')
         bool mostrarAviso = jugadorEnRango && puedeInteractuar && !completado;
-        if (interactPrompt != null)
-        {
-            if (interactPrompt.activeSelf != mostrarAviso)
-                interactPrompt.SetActive(mostrarAviso);
-        }
-        else if (mostrarAviso)
-        {
-            Debug.LogWarning("GusanoN2Controller: 'interactPrompt' no asignado pero se intenta mostrar aviso.");
-        }
+        if (interactPrompt != null) interactPrompt.SetActive(mostrarAviso);
         // 2. Comprobar si el jugador presiona 'E'
         if (mostrarAviso && Input.GetKeyDown(KeyCode.E))
         {
