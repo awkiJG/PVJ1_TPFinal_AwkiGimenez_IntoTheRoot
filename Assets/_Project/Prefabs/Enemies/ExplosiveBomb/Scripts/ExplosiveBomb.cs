@@ -37,7 +37,7 @@ public class ExplosiveBomb : MonoBehaviour
             spikeGO.transform.localScale = new Vector3(scale, scale, scale);
 
             // Obtener el script de la espina y pasarle los datos
-            /*SpikeHazard spikeScript = spikeGO.GetComponent<SpikeHazard>();
+            SpikeHazard spikeScript = spikeGO.GetComponent<SpikeHazard>();
             if (spikeScript != null)
             {
                 spikeScript.Initialize(direction, force);
@@ -45,7 +45,7 @@ public class ExplosiveBomb : MonoBehaviour
             else
             {
                 Debug.LogWarning("El Prefab 'SpikeHazard' no tiene el script 'SpikeHazard.cs'");
-            }*/
+            }
         }
         Destroy(gameObject);
     }

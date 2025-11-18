@@ -3495,23 +3495,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1165643293674084272, guid: 8fe7497ace15135418413a310f23d0d7, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.40781
+      value: 0.99999994
       objectReference: {fileID: 0}
     - target: {fileID: 1165643293674084272, guid: 8fe7497ace15135418413a310f23d0d7, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.40781
+      value: 0.99999994
       objectReference: {fileID: 0}
     - target: {fileID: 1165643293674084272, guid: 8fe7497ace15135418413a310f23d0d7, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.40781
+      value: 0.99999994
       objectReference: {fileID: 0}
     - target: {fileID: 1165643293674084272, guid: 8fe7497ace15135418413a310f23d0d7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 44.02
+      value: 44.09
       objectReference: {fileID: 0}
     - target: {fileID: 1165643293674084272, guid: 8fe7497ace15135418413a310f23d0d7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -238.37
+      value: -241.54
       objectReference: {fileID: 0}
     - target: {fileID: 1165643293674084272, guid: 8fe7497ace15135418413a310f23d0d7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3545,14 +3545,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1165643293674084272, guid: 8fe7497ace15135418413a310f23d0d7, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4779239837956250824, guid: 8fe7497ace15135418413a310f23d0d7, type: 3}
       propertyPath: m_Name
       value: ExplosiveBomb
       objectReference: {fileID: 0}
     - target: {fileID: 4876248308290566315, guid: 8fe7497ace15135418413a310f23d0d7, type: 3}
-      propertyPath: scale
-      value: 0.8
+      propertyPath: force
+      value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4876248308290566315, guid: 8fe7497ace15135418413a310f23d0d7, type: 3}
+      propertyPath: scale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876248308290566315, guid: 8fe7497ace15135418413a310f23d0d7, type: 3}
+      propertyPath: spikeCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876248308290566315, guid: 8fe7497ace15135418413a310f23d0d7, type: 3}
+      propertyPath: spikePrefab
+      value: 
+      objectReference: {fileID: 4793747208910580386, guid: ab37cedd645915c4e97e09d92895becc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
