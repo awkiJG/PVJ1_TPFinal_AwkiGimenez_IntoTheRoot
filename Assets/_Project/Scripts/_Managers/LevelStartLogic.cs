@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelStartLogic : MonoBehaviour
 {
@@ -6,22 +7,30 @@ public class LevelStartLogic : MonoBehaviour
     [SerializeField] private Rigidbody2D playerRigidbody;
     void Start()
     {
-        // 1. LEER EL MENSAJE
-        if (playerStats.GetEntryPointID() == "Nivel_1_Arbol")
-        {
-            playerRigidbody.linearVelocity = new Vector2(0f, -30f);
-            playerStats.SetSap(0);
-        }
-        else if (playerStats.GetEntryPointID() == "Nivel_2_Raices")
-        {
-            playerRigidbody.linearVelocity = new Vector2(0f, -30f);
-            playerStats.SetHasMap(false);
-        }
-        else if (playerStats.GetEntryPointID() == "Nivel_3_Mosquitos")
-        {
-            playerRigidbody.linearVelocity = new Vector2(0f, -30f);
-            playerStats.SetHasMap(false);
+        string nivelAcual = SceneManager.GetActiveScene().name.ToString();
 
+        if (nivelAcual == "Nivel_1_Arbol")
+        {
+            playerStats.ResetToDefaults();
+        }
+        else if (nivelAcual == "Nivel_2_Raices")
+        {
+            playerRigidbody.linearVelocity = new Vector2(0f, -30f);
+            playerStats.SetHasMap(false);
+            playerStats.SetCurrentSap(0);
+        }
+        else if (nivelAcual == "Nivel_3_Mosquitos")
+        {
+            playerRigidbody.linearVelocity = new Vector2(0f, -30f);
+            playerStats.SetHasMap(false);
+            playerStats.SetHasMosquitoEgg(false);
+            playerStats.SetMaxSap(playerStats.GetCurrentSap());
+        }
+        else if (nivelAcual == "Nivel_4_Purificacion")
+        {
+            playerRigidbody.linearVelocity = new Vector2(0f, -30f);
+            playerStats.SetHasMosquitoEgg(false);
+            playerStats.SetCurrentSap(playerStats.GetMaxSap());
         }
     }
 }

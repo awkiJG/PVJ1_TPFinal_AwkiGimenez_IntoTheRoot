@@ -17,8 +17,7 @@ public class PlayerStats : ScriptableObject
     [SerializeField] private int currentSap;
     [SerializeField] private bool hasMap;
     [SerializeField] private bool hasMosquitoEgg;
-    [HideInInspector] private string entryPointID;
-
+    private int maxSap;
     // ---------------------------------------------
     // --- MÉTODOS DE INICIALIZACIÓN Y RESETEO ---
     // ---------------------------------------------
@@ -30,7 +29,6 @@ public class PlayerStats : ScriptableObject
         hasMap = defaultHasMap;
         hasMosquitoEgg = defaultHasMosquitoEgg;
         
-        Debug.Log("PlayerStats reseteado: Valores de inicio de partida.");
     }
     
     public void ResetLives()
@@ -60,10 +58,6 @@ public class PlayerStats : ScriptableObject
         }
     }
 
-    public void SetEntryPointID(string id)
-    {
-        entryPointID = id;
-    }
 
     /// <summary>
     /// Intenta liberar una cantidad de savia del inventario del jugador.
@@ -87,11 +81,18 @@ public class PlayerStats : ScriptableObject
         return false;
     }
 
-    public void SetSap(int amount)
+    public void SetCurrentSap(int amount)
     {
         if (amount >= 0)
         {
             currentSap = amount;
+        }
+    }
+    public void SetMaxSap(int amount)
+    {
+        if (amount >= 0)
+        {
+            maxSap = amount;
         }
     }
     public void SetHasMap(bool hasMapItem)
@@ -134,8 +135,8 @@ public class PlayerStats : ScriptableObject
     {
         return hasMosquitoEgg;
     }
-    public string GetEntryPointID()
+    public int GetMaxSap()
     {
-        return entryPointID;
+        return maxSap;
     }
 }
