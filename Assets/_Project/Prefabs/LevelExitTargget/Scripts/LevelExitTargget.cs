@@ -3,35 +3,37 @@ using UnityEngine.SceneManagement;
 
 public class LevelExitTrigger : MonoBehaviour
 {
-    [SerializeField] private PlayerStats playerStats;
-    private string sceneToLoad;
-    private string entryPointID;
-
+    private string escenaActual;
+    private int indexProximaEscena;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            entryPointID = SceneManager.GetActiveScene().name.ToString();
-            if (entryPointID == "Nivel_1_Arbol")
+            escenaActual = SceneManager.GetActiveScene().name.ToString();
+            indexProximaEscena = SceneManager.GetActiveScene().buildIndex + 1;
+            if (escenaActual == "Nivel_1_Arbol")
             {
-                playerStats.SetEntryPointID(entryPointID);
-                sceneToLoad = "Nivel_2_Raices";
-                SceneManager.LoadScene(sceneToLoad);
+                SceneManager.LoadScene(indexProximaEscena);
+                if (PlayerPrefs.GetInt("HighestLevelReached") < 2)
+                {
                 PlayerPrefs.SetInt("HighestLevelReached", 2);
+                }
             }
-            else if (entryPointID == "Nivel_2_Raices")
+            else if (escenaActual == "Nivel_2_Raices")
             {
-                playerStats.SetEntryPointID(entryPointID);
-                sceneToLoad = "Nivel_3_Mosquitos";
-                SceneManager.LoadScene(sceneToLoad);
+                SceneManager.LoadScene(indexProximaEscena);
+                if (PlayerPrefs.GetInt("HighestLevelReached") < 3)
+                {
                 PlayerPrefs.SetInt("HighestLevelReached", 3);
+                }
             }
-            else if (entryPointID == "Nivel_3_Mosquitos")
+            else if (escenaActual == "Nivel_3_Mosquitos")
             {
-                playerStats.SetEntryPointID(entryPointID);
-                sceneToLoad = "Nivel_4_Purificacion";
-                SceneManager.LoadScene(sceneToLoad);
+                SceneManager.LoadScene(indexProximaEscena);
+                if (PlayerPrefs.GetInt("HighestLevelReached") < 4)
+                {   
                 PlayerPrefs.SetInt("HighestLevelReached", 4);
+                }
             }
         }
     }
