@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a6d2a2b9a3fa3449808cd9b1b8be171, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spikePrefab: {fileID: 0}
+  spikePrefab: {fileID: 4079919582012575306, guid: dc82b536b83e622499722a17075f6a19, type: 3}
   spikeCount: 0
   force: 0
   scale: 0

@@ -4,11 +4,7 @@ using System.Collections;
 
 public class RootAttack : MonoBehaviour
 {
-    private bool isAttacking = false;
     private Vector3 startPosition;
-
-    // Almacena la corrutina actual para poder detenerla si es necesario
-    private Coroutine activeAttackCoroutine;
 
     /// <summary>
     /// Guarda la posición "de hogar" al iniciar.
@@ -29,14 +25,7 @@ public class RootAttack : MonoBehaviour
     /// <param name="waitTime">Tiempo (en segundos) que esperará extendida.</param>
     public void ActivateAttack(float distance, float speed, float waitTime)
     {
-        // Si ya está atacando, ignora esta nueva orden.
-        if (isAttacking)
-        {
-            return;
-        }
-
-        // Iniciar la corrutina y guardar la referencia
-        activeAttackCoroutine = StartCoroutine(AttackSequence(distance, speed, waitTime));
+        StartCoroutine(AttackSequence(distance, speed, waitTime));
     }
 
     // --- 2. La Secuencia de Ataque (La Corrutina) ---
@@ -46,8 +35,6 @@ public class RootAttack : MonoBehaviour
     /// </summary>
     private IEnumerator AttackSequence(float distance, float speed, float waitTime)
     {
-        // 1. Marcar como "ocupada"
-        isAttacking = true;
 
         float tiempoInicio = Time.time;
 
@@ -55,7 +42,7 @@ public class RootAttack : MonoBehaviour
         {
             // Calcular un offset aleatorio en X e Y
             // (Usamos Vector3 para que sea compatible con startPosition)
-            Vector3 randomOffset = (Vector3)Random.insideUnitCircle * 0.1f;
+            Vector3 randomOffset = (Vector3)Random.insideUnitCircle * 0.3f;
             
             // Aplicar el offset a la posición inicial (para que no se "vaya" del sitio)
             transform.position = startPosition + randomOffset;
@@ -101,9 +88,5 @@ public class RootAttack : MonoBehaviour
         }
         // Asegurarse de que quede exacto al final
         transform.position = startPosition;
-
-        // 6. Marcar como "disponible"
-        isAttacking = false;
-        activeAttackCoroutine = null;
     }
 }

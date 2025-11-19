@@ -55,7 +55,7 @@ public class ExplosiveBomb : MonoBehaviour
         transform.Rotate(0, 0, 300 * Time.deltaTime);
 
         // 3. Chequear si ha llegado a la altura de explosión
-        if (transform.position.y <= -254)
+        if (transform.position.y <= -251.5f)
         {
             Explode();
         }
