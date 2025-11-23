@@ -18,7 +18,7 @@ public class BossController : MonoBehaviour
     [SerializeField] private GameObject bombPrefab;
 
     // --- 2. ALMACÉN DE PATRONES (Las Partituras) ---
-    
+
     // FASE 1: Una única lista larga (o bloques concatenados) que se ejecuta UNA vez.
     private List<List<ICommand>> phase1_FullSequence;
 
@@ -33,7 +33,7 @@ public class BossController : MonoBehaviour
     private void Start()
     {
         BuildAttackPatterns();
-        Invoke("StartPhase1", 0.5f);
+        Invoke("StartPhase2Loop", 1f);
     }
 
     private void BuildAttackPatterns()
@@ -67,7 +67,7 @@ public class BossController : MonoBehaviour
         phase1_PartB.Add(new ExplosiveShotCommand(bombSpawner, 11, 8f, 0.7f, 4f, bombPrefab));
 
         List<ICommand> phase1_PartC = new List<ICommand>();
-        
+
         phase1_PartC.Add(new RootAttackCommand(roots[10], -27f, 20f, 23f, 2f));
         phase1_PartC.Add(new RootAttackCommand(roots[9], -14f, 20f, 0f, 1f));
         phase1_PartC.Add(new RootAttackCommand(roots[6], -19f, 20f, 0f, 1f));
@@ -78,7 +78,7 @@ public class BossController : MonoBehaviour
         phase1_PartC.Add(new RootAttackCommand(roots[4], -20.4f, 20f, 0f, 1f));
         phase1_PartC.Add(new RootAttackCommand(roots[6], -17.4f, 20f, 0f, 0f));
         phase1_PartC.Add(new RootAttackCommand(roots[7], -13.4f, 20f, 0f, 2f));
-        phase1_PartC.Add(new ExplosiveShotCommand(bombSpawner, 12, 10f, 0.5f, 2f, bombPrefab));       
+        phase1_PartC.Add(new ExplosiveShotCommand(bombSpawner, 12, 10f, 0.5f, 2f, bombPrefab));
         phase1_PartC.Add(new RootAttackCommand(roots[15], -27.8f, 25f, 0f, 2f));
         phase1_PartC.Add(new ExplosiveShotCommand(bombSpawner, 8, 15f, 0.3f, 1f, bombPrefab));
         phase1_PartC.Add(new ExplosiveShotCommand(bombSpawner, 12, 12f, 0.4f, 1f, bombPrefab));
@@ -120,29 +120,142 @@ public class BossController : MonoBehaviour
         phase1_FullSequence.Add(phase1_PartB);
         phase1_FullSequence.Add(phase1_PartC);
         phase1_FullSequence.Add(phase1_PartD);
-
         // ---------------------------------------------------------
         // CONFIGURACIÓN FASE 2 (Bucle Infinito de Listas)
         // ---------------------------------------------------------
         phase2_LoopCollection = new List<List<ICommand>>();
 
-        // -- LOOP A (Ej. Ataque suave para empezar el ciclo) --
         List<ICommand> loopA = new List<ICommand>();
-        // loopA.Add(new RootAttackCommand(...)); // Tapar hueco savia
-        // loopA.Add(new RootAttackCommand(...));
-        phase2_LoopCollection.Add(loopA); // ¡Importante! Añadir la lista a la colección
 
-        // -- LOOP B (Ej. Ataque de Bombas) --
+        loopA.Add(new RootAttackCommand(roots[10], -27f, 30f, 8f, 1f));
+        loopA.Add(new RootAttackCommand(roots[13], -27.3f, 30f, 7f, 1f));
+        loopA.Add(new RootAttackCommand(roots[17], -17f, 30f, 6.55f, 0f));
+        loopA.Add(new RootAttackCommand(roots[18], -17f, 30f, 6.55f, 1f));
+        loopA.Add(new RootAttackCommand(roots[15], -27.8f, 30f, 5f, 1f));
+        loopA.Add(new RootAttackCommand(roots[14], -26.7f, 30f, 4f, 1f));
+
+        loopA.Add(new RootAttackCommand(roots[9], -7, 30f, 0f, 0.2f));
+        loopA.Add(new RootAttackCommand(roots[8], -7, 30f, 0f, 0.2f));
+        loopA.Add(new RootAttackCommand(roots[7], -8, 30f, 0f, 0.2f));
+        loopA.Add(new RootAttackCommand(roots[6], -12, 30f, 0f, 0.2f));
+        loopA.Add(new RootAttackCommand(roots[5], -14, 30f, 0f, 0.2f));
+        loopA.Add(new RootAttackCommand(roots[4], -15, 30f, 0f, 0f));
+        loopA.Add(new RootAttackCommand(roots[11], -30, 40f, 0f, 1f));
+
+        loopA.Add(new RootAttackCommand(roots[0], -9, 25f, 0f, 0.2f));
+        loopA.Add(new RootAttackCommand(roots[1], -9, 25f, 0f, 0.2f));
+        loopA.Add(new RootAttackCommand(roots[2], -9, 25f, 0f, 0.2f));
+        loopA.Add(new RootAttackCommand(roots[3], -9, 25f, 0f, 2f));
+
         List<ICommand> loopB = new List<ICommand>();
-        // loopB.Add(new RootAttackCommand(...)); // Tapar hueco savia
-        // loopB.Add(new ExplosiveShotCommand(...));
-        phase2_LoopCollection.Add(loopB);
 
-        // -- LOOP C (Ej. Ataque Mixto Difícil) --
+        loopB.Add(new RootAttackCommand(roots[10], -27f, 30f, 22f, 1f));
+        loopB.Add(new RootAttackCommand(roots[13], -30f, 30f, 21f, 0.5f));
+        loopB.Add(new RootAttackCommand(roots[9], -12f, 30f, 1f, 0.2f));
+        loopB.Add(new RootAttackCommand(roots[18], -8.32f, 50f, 0f, 0f));
+        loopB.Add(new RootAttackCommand(roots[8], -12f, 30f, 1f, 0.2f));
+        loopB.Add(new RootAttackCommand(roots[7], -12.5f, 30f, 1f, 0.2f));
+        loopB.Add(new RootAttackCommand(roots[6], -16.7f, 30f, 1f, 0.2f));
+        loopB.Add(new RootAttackCommand(roots[5], -19.6f, 30f, 1f, 1.5f));
+        loopB.Add(new RootAttackCommand(roots[16], -35f, 50f, 17.8f, 1.2f));
+        loopB.Add(new RootAttackCommand(roots[18], -14f, 50f, 0f, 0f));
+
+        loopB.Add(new RootAttackCommand(roots[0], -13f, 50f, 0f, 1f));
+        loopB.Add(new RootAttackCommand(roots[3], -13f, 50f, 0f, 1f));
+        loopB.Add(new RootAttackCommand(roots[2], -13f, 50f, 0f, 1f));
+        loopB.Add(new RootAttackCommand(roots[0], -13f, 50f, 0f, 1f));
+
+        loopB.Add(new RootAttackCommand(roots[1], -13f, 50f, 0f, 0f));
+        loopB.Add(new RootAttackCommand(roots[3], -13f, 50f, 0f, 1f));
+
+        loopB.Add(new RootAttackCommand(roots[0], -13f, 50f, 0f, 0f));
+        loopB.Add(new RootAttackCommand(roots[2], -13f, 50f, 0f, 2f));
+
+        loopB.Add(new RootAttackCommand(roots[0], -13f, 50f, 0f, 0f));
+        loopB.Add(new RootAttackCommand(roots[1], -13f, 50f, 0f, 0f));
+        loopB.Add(new RootAttackCommand(roots[2], -13f, 50f, 0f, 2f));
+
+        loopB.Add(new RootAttackCommand(roots[1], -13f, 50f, 0f, 0f));
+        loopB.Add(new RootAttackCommand(roots[2], -13f, 50f, 0f, 0f));
+        loopB.Add(new RootAttackCommand(roots[3], -13f, 50f, 0f, 2f));
+
+        loopB.Add(new RootAttackCommand(roots[0], -13f, 50f, 0f, 0f));
+        loopB.Add(new RootAttackCommand(roots[1], -13f, 50f, 0f, 0f));
+        loopB.Add(new RootAttackCommand(roots[3], -13f, 50f, 0f, 2f));
+
+        loopB.Add(new RootAttackCommand(roots[3], -13f, 50f, 0f, 0.6f));
+        loopB.Add(new RootAttackCommand(roots[2], -13f, 50f, 0f, 0.6f));
+        loopB.Add(new RootAttackCommand(roots[0], -13f, 50f, 0f, 0.6f));
+        loopB.Add(new RootAttackCommand(roots[3], -13f, 50f, 0f, 0.6f));
+        loopB.Add(new RootAttackCommand(roots[1], -13f, 50f, 0f, 0.6f));
+        loopB.Add(new RootAttackCommand(roots[0], -13f, 50f, 0f, 0.6f));
+        loopB.Add(new RootAttackCommand(roots[3], -13f, 50f, 0f, 2f));
+
         List<ICommand> loopC = new List<ICommand>();
-        // ... añadir comandos ...
+
+        loopC.Add(new RootAttackCommand(roots[10], -29f, 30f, 17f, 2f));
+
+        loopC.Add(new RootAttackCommand(roots[0], 6f, 10f, 16f, 0f));
+        loopC.Add(new RootAttackCommand(roots[1], 6f, 10f, 16f, 0f));
+        loopC.Add(new RootAttackCommand(roots[2], 6f, 10f, 16f, 0f));
+        loopC.Add(new RootAttackCommand(roots[3], 6f, 10f, 16f, 0f));
+        loopC.Add(new RootAttackCommand(roots[4], 6f, 10f, 16f, 0f));
+        loopC.Add(new RootAttackCommand(roots[5], 6f, 10f, 16f, 0f));
+        loopC.Add(new RootAttackCommand(roots[6], 6f, 10f, 16f, 0f));
+        loopC.Add(new RootAttackCommand(roots[7], 6f, 10f, 16f, 0f));
+        loopC.Add(new RootAttackCommand(roots[8], 6f, 10f, 16f, 0f));
+        loopC.Add(new RootAttackCommand(roots[9], 6f, 10f, 16f, 0f));
+        loopC.Add(new RootAttackCommand(roots[12], 6f, 10f, 16f, 0f));
+        loopC.Add(new RootAttackCommand(roots[13], 6f, 10f, 16f, 0f));
+        loopC.Add(new RootAttackCommand(roots[14], 6f, 10f, 16f, 0f));
+        loopC.Add(new RootAttackCommand(roots[15], 6f, 10f, 16f, 0f));
+        loopC.Add(new RootAttackCommand(roots[17], 6f, 10f, 16f, 0f));
+        loopC.Add(new RootAttackCommand(roots[18], 6f, 10f, 16f, 1f));
+
+        loopC.Add(new ExplosiveShotCommand(bombSpawner, 15, 10f, 0.6f, 3f, bombPrefab));
+        loopC.Add(new ExplosiveShotCommand(bombSpawner, 4, 12f, 0.4f, 0.3f, bombPrefab));
+        loopC.Add(new ExplosiveShotCommand(bombSpawner, 7, 9f, 0.35f, 0.3f, bombPrefab));
+        loopC.Add(new ExplosiveShotCommand(bombSpawner, 3, 10f, 0.4f, 0.3f, bombPrefab));
+        loopC.Add(new ExplosiveShotCommand(bombSpawner, 9, 11f, 0.45f, 0.3f, bombPrefab));
+        loopC.Add(new ExplosiveShotCommand(bombSpawner, 5, 8f, 0.4f, 0.3f, bombPrefab));
+        loopC.Add(new ExplosiveShotCommand(bombSpawner, 4, 13f, 0.35f, 3f, bombPrefab));
+        loopC.Add(new ExplosiveShotCommand(bombSpawner, 15, 10f, 0.8f, 4f, bombPrefab));
+        loopC.Add(new ExplosiveShotCommand(bombSpawner, 17, 10f, 0.2f, 4f, bombPrefab));
+
+        List<ICommand> loopD = new List<ICommand>();
+
+        loopD.Add(new RootAttackCommand(roots[10], -28f, 30f, 13f, 2f));
+
+        loopD.Add(new RootAttackCommand(roots[13], -11.5f, 30f, 0.1f, 0f));
+        loopD.Add(new RootAttackCommand(roots[18], -12.5f, 30f, 0.1f, 0f));
+        loopD.Add(new RootAttackCommand(roots[17], -12f, 30f, 0.1f, 0f));
+        loopD.Add(new RootAttackCommand(roots[15], -11.5f, 30f, 0.1f, 0f));
+        loopD.Add(new RootAttackCommand(roots[14], -10f, 30f, 0.1f, 1f));
+
+        loopD.Add(new ExplosiveShotCommand(bombSpawner, 15, 12f, 0.6f, 1.5f, bombPrefab));
+
+        loopD.Add(new RootAttackCommand(roots[9], -14.5f, 40f, 0f, 0.2f));
+        loopD.Add(new RootAttackCommand(roots[8], -14.5f, 40f, 0f, 0.2f));
+        loopD.Add(new RootAttackCommand(roots[7], -15f, 40f, 0f, 0.2f));
+        loopD.Add(new RootAttackCommand(roots[6], -19.2f, 40f, 0f, 0.2f));
+        loopD.Add(new RootAttackCommand(roots[5], -22.2f, 40f, 0f, 0.2f));
+        loopD.Add(new RootAttackCommand(roots[4], -23f, 40f, 0f, 0.8f));
+
+        loopD.Add(new RootAttackCommand(roots[0], -14.5f, 40f, 0f, 0.2f));
+        loopD.Add(new RootAttackCommand(roots[1], -14.5f, 40f, 0f, 0.2f));
+        loopD.Add(new RootAttackCommand(roots[2], -14.5f, 40f, 0f, 0.2f));
+        loopD.Add(new RootAttackCommand(roots[3], -14.5f, 40f, 0f, 2f));
+
+        loopD.Add(new ExplosiveShotCommand(bombSpawner, 10, 15f, 0.4f, 1f, bombPrefab));
+        loopD.Add(new ExplosiveShotCommand(bombSpawner, 8, 10f, 0.8f, 1f, bombPrefab));
+        loopD.Add(new ExplosiveShotCommand(bombSpawner, 15, 12f, 0.5f, 4f, bombPrefab));
+
+        phase2_LoopCollection.Add(loopA);
         phase2_LoopCollection.Add(loopC);
-        
+        phase2_LoopCollection.Add(loopB);
+        phase2_LoopCollection.Add(loopD);
+
+
         // (Puedes añadir tantos Loops como quieras a la colección)
     }
     // ========================================================================
@@ -184,7 +297,7 @@ public class BossController : MonoBehaviour
             if (phase1_FullSequence.Count > 0)
             {
                 List<ICommand> currentList = phase1_FullSequence[currentIndex];
-                
+
                 // 2. Ejecutar esa lista completa
                 yield return StartCoroutine(ExecuteCommandList(currentList));
 
@@ -193,12 +306,11 @@ public class BossController : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning("BossController: ¡La colección de Fase 1 está vacía!");
                 yield return null; // Evitar cuelgue si está vacía
             }
-    
+
         }
-        
+
         // Notificar a la FSM que ya terminamos
         OnPhase1Finished?.Invoke();
     }
@@ -206,33 +318,37 @@ public class BossController : MonoBehaviour
     // --- Motor FASE 2 (Infinita) ---
     private IEnumerator ExecutionRoutine_Phase2()
     {
-        Debug.Log("BossController: Iniciando Fase 2 (Bucle)...");
-        
+
         int currentIndex = 0;
 
         // Bucle infinito (hasta que se llame a StopBoss)
         while (true)
         {
-            // 1. Obtener la lista de ataques actual (Ciclo: A -> B -> C -> A...)
+            // 1. Obtener la lista de ataques actual 
             // Usamos el operador módulo (%) para volver a 0 cuando llegamos al final.
             if (phase2_LoopCollection.Count > 0)
             {
                 List<ICommand> currentList = phase2_LoopCollection[currentIndex];
-                
+
                 // 2. Ejecutar esa lista completa
                 yield return StartCoroutine(ExecuteCommandList(currentList));
 
-                // 3. Pasar al siguiente índice
-                currentIndex = (currentIndex + 1) % phase2_LoopCollection.Count;
-            }
-            else
-            {
-                Debug.LogWarning("BossController: ¡La colección de Fase 2 está vacía!");
-                yield return null; // Evitar cuelgue si está vacía
-            }
+                // 3. Elegir aleatoriamente la siguiente lista a ejecutar
+                // Asegurarnos de que no sea el mismo índice que el actual
+                if (phase2_LoopCollection.Count > 1)
+                {
+                    int newIndex;
+                    do
+                    {
+                        newIndex = UnityEngine.Random.Range(0, phase2_LoopCollection.Count);
+                    }
+                    while (newIndex == currentIndex);
 
-            // 4. Pausa entre bucles (Espacio para respirar/Savia)
-            // Puedes ajustar este tiempo o hacerlo parte del último comando de la lista.
+                    currentIndex = newIndex;
+                }
+                // Si solo hay 1 elemento, se mantiene el índice actual (no se puede cambiar)
+            }
+            // 4. Pausa entre bucles
             yield return new WaitForSeconds(2.0f);
         }
     }
@@ -247,5 +363,5 @@ public class BossController : MonoBehaviour
             yield return StartCoroutine(command.Execute());
         }
     }
-    
+
 }
