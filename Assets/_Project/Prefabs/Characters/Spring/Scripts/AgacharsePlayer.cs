@@ -17,6 +17,8 @@ public class AgacharsePlayer : MonoBehaviour
     private bool inputAgacharse;
     private CapsuleCollider2D capsuleCollider;
 
+    [SerializeField] private MovimientoPlayer movimientoPlayer;
+
     void Start()
     {
         // Obtener referencia al collider
@@ -61,6 +63,7 @@ public class AgacharsePlayer : MonoBehaviour
     // Cambia el collider para posición agachado
     private void Agacharse()
     {
+        movimientoPlayer.Velocidad = 7f;
         isCrouching = true;
         capsuleCollider.size = new Vector2(capsuleCollider.size.x, crouchHeight);
         capsuleCollider.offset = crounchOffset;
@@ -71,6 +74,7 @@ public class AgacharsePlayer : MonoBehaviour
     {
         if (CanStandUp())
         {
+            movimientoPlayer.Velocidad = 10f;
             isCrouching = false;
             capsuleCollider.size = new Vector2(capsuleCollider.size.x, originalHeight);
             capsuleCollider.offset = originalOffset;

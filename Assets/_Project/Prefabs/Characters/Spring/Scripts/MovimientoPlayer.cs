@@ -2,13 +2,14 @@ using UnityEngine;
 
 public class MovimientoPlayer : MonoBehaviour
 {
-    [SerializeField] private float velocidad;
+    private float velocidad;
     private float direccion;
     private Rigidbody2D rb;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        velocidad = 10f;
     }
 
     void FixedUpdate()
@@ -45,4 +46,6 @@ public class MovimientoPlayer : MonoBehaviour
     {
         return direccion;
     }
+
+    public float Velocidad { get => velocidad; set => velocidad = value; }
 }

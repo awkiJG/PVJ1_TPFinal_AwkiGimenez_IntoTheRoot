@@ -173,7 +173,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d18bc368c49a0734bbe6edcb16c558d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 10
 --- !u!114 &5547057759048059264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,6 +209,7 @@ MonoBehaviour:
   originalHeight: 0
   originalOffset: {x: 0, y: 0}
   isCrouching: 0
+  movimientoPlayer: {fileID: 6126026043520304424}
 --- !u!114 &4861314870238671801
 MonoBehaviour:
   m_ObjectHideFlags: 0
