@@ -14,7 +14,7 @@ public class DamagePlayer : MonoBehaviour
             if (player != null)
             {
                 // 4. Llamar al método en el script que encontramos
-                player.TakeHit();
+                //player.TakeHit();
             }
         }
     }

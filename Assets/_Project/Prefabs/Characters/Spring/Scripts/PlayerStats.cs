@@ -17,7 +17,7 @@ public class PlayerStats : ScriptableObject
     [SerializeField] private int currentSap;
     [SerializeField] private bool hasMap;
     [SerializeField] private bool hasMosquitoEgg;
-    private int maxSap;
+    [SerializeField] private int maxSap;
     // ---------------------------------------------
     // --- MÉTODOS DE INICIALIZACIÓN Y RESETEO ---
     // ---------------------------------------------
@@ -34,7 +34,6 @@ public class PlayerStats : ScriptableObject
     public void ResetLives()
     {
         currentLives = maxLives;
-        Debug.Log("Vidas reseteadas a MAX. Savia y ítems preservados.");
     }
 
     // ---------------------------------------------
@@ -71,13 +70,11 @@ public class PlayerStats : ScriptableObject
         {
             // 2. Ejecutar la acción
             currentSap -= amount;
-            Debug.Log($"[Mecánica Final] Se liberaron {amount} de savia. Restante: {currentSap}");
             // Aquí se dispararía el evento para curar al árbol o activar la UI
             return true;
         }
 
         // 3. Fallo
-        Debug.Log($"Fallo al liberar savia. Necesario: {amount}, Actual: {currentSap}");
         return false;
     }
 

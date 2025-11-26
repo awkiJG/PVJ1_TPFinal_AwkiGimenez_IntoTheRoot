@@ -1,0 +1,674 @@
+fileFormatVersion: 2
+guid: 4c8d662a4f9db7d41ade0f153cc996db
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 623629657754598012
+    second: SacrificionSpriteShip_0
+  - first:
+      213: -782578614651142283
+    second: SacrificionSpriteShip_1
+  - first:
+      213: -1720941202236503028
+    second: SacrificionSpriteShip_2
+  - first:
+      213: -2706920949932623026
+    second: SacrificionSpriteShip_3
+  - first:
+      213: 6015885342440938063
+    second: SacrificionSpriteShip_4
+  - first:
+      213: -2464953399551461233
+    second: SacrificionSpriteShip_5
+  - first:
+      213: -1492135048869815632
+    second: SacrificionSpriteShip_6
+  - first:
+      213: -166377373016678497
+    second: SacrificionSpriteShip_7
+  - first:
+      213: -1474235539440938839
+    second: SacrificionSpriteShip_8
+  - first:
+      213: -988048481844381168
+    second: SacrificionSpriteShip_9
+  - first:
+      213: 9047897882386429902
+    second: SacrificionSpriteShip_10
+  - first:
+      213: -6348191576856446768
+    second: SacrificionSpriteShip_11
+  - first:
+      213: 7968593465836578740
+    second: SacrificionSpriteShip_12
+  - first:
+      213: 3205424764760842014
+    second: SacrificionSpriteShip_13
+  - first:
+      213: -4415692914001537281
+    second: SacrificionSpriteShip_14
+  - first:
+      213: 2514115170128447286
+    second: SacrificionSpriteShip_15
+  - first:
+      213: 7060771433925319909
+    second: SacrificionSpriteShip_16
+  - first:
+      213: 9204410886474193803
+    second: SacrificionSpriteShip_17
+  - first:
+      213: -6637382682723962446
+    second: SacrificionSpriteShip_18
+  - first:
+      213: -2553150598695954253
+    second: SacrificionSpriteShip_19
+  - first:
+      213: 1277239251677617195
+    second: SacrificionSpriteShip_20
+  - first:
+      213: 6705175614509132375
+    second: SacrificionSpriteShip_21
+  - first:
+      213: -7882824406972809775
+    second: SacrificionSpriteShip_22
+  - first:
+      213: -2587392396791863019
+    second: SacrificionSpriteShip_23
+  - first:
+      213: -7634159431899615537
+    second: SacrificionSpriteShip_24
+  - first:
+      213: 5209602496245368721
+    second: SacrificionSpriteShip_25
+  - first:
+      213: -4774642679080670085
+    second: SacrificionSpriteShip_26
+  - first:
+      213: -2314189631125893055
+    second: SacrificionSpriteShip_27
+  - first:
+      213: 8884239434389186724
+    second: SacrificionSpriteShip_28
+  - first:
+      213: -695240697976218945
+    second: SacrificionSpriteShip_29
+  - first:
+      213: 2661808033969557079
+    second: SacrificionSpriteShip_30
+  - first:
+      213: -6158427748554759508
+    second: SacrificionSpriteShip_31
+  - first:
+      213: -7978398041105747096
+    second: SacrificionSpriteShip_32
+  - first:
+      213: 1286244580193823507
+    second: SacrificionSpriteShip_33
+  - first:
+      213: -8985440241911508291
+    second: SacrificionSpriteShip_34
+  - first:
+      213: 7700883510538520136
+    second: SacrificionSpriteShip_35
+  - first:
+      213: -5658624884639052351
+    second: SacrificionSpriteShip_36
+  - first:
+      213: -5522818277731528223
+    second: SacrificionSpriteShip_37
+  - first:
+      213: -4933594438237402372
+    second: SacrificionSpriteShip_38
+  - first:
+      213: -7849059439327855875
+    second: SacrificionSpriteShip_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SacrificionSpriteShip_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1316
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a7cdd9ed397a800800000000000000
+      internalID: 623629657754598012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SacrificionSpriteShip_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1316
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57fb6e075e8b325f0800000000000000
+      internalID: -782578614651142283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SacrificionSpriteShip_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1316
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c0c51381dfd18e0800000000000000
+      internalID: -1720941202236503028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SacrificionSpriteShip_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1316
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4bf338ecb51f6ad0800000000000000
+      internalID: -2706920949932623026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SacrificionSpriteShip_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 987
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4adbad68d7bc7350800000000000000
+      internalID: 6015885342440938063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SacrificionSpriteShip_5
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 987
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f88f7d761f9bacdd0800000000000000
+      internalID: -2464953399551461233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SacrificionSpriteShip_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 987
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba5437241fda4be0800000000000000
+      internalID: -1492135048869815632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SacrificionSpriteShip_7
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 987
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f9da629a8e0bdf0800000000000000
+      internalID: -166377373016678497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SacrificionSpriteShip_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 658
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a0dd5476967a8be0800000000000000
+      internalID: -1474235539440938839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SacrificionSpriteShip_9
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 658
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a3dc2042fb942f0800000000000000
+      internalID: -988048481844381168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SacrificionSpriteShip_10
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 658
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec7f6abaf27909d70800000000000000
+      internalID: 9047897882386429902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SacrificionSpriteShip_11
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 658
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d8385f1561b6e7a0800000000000000
+      internalID: -6348191576856446768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SacrificionSpriteShip_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 329
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b720baa981269e60800000000000000
+      internalID: 7968593465836578740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SacrificionSpriteShip_13
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 329
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f5fc927d4fb7c20800000000000000
+      internalID: 3205424764760842014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SacrificionSpriteShip_14
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 329
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff69ab7a0be48b2c0800000000000000
+      internalID: -4415692914001537281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SacrificionSpriteShip_15
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 329
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6374de74d6ee3e220800000000000000
+      internalID: 2514115170128447286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SacrificionSpriteShip_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ec1857a536ecf160800000000000000
+      internalID: 7060771433925319909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SacrificionSpriteShip_17
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b58072fe2acbf70800000000000000
+      internalID: 9204410886474193803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SacrificionSpriteShip_18
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 300
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1763b85fe48ff6b45a18aa95bb93d433
+      internalID: 1295116529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3aa90f6646e621144b2438332692aa0d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SacrificionSpriteShip_0: 623629657754598012
+      SacrificionSpriteShip_1: -782578614651142283
+      SacrificionSpriteShip_10: 9047897882386429902
+      SacrificionSpriteShip_11: -6348191576856446768
+      SacrificionSpriteShip_12: 7968593465836578740
+      SacrificionSpriteShip_13: 3205424764760842014
+      SacrificionSpriteShip_14: -4415692914001537281
+      SacrificionSpriteShip_15: 2514115170128447286
+      SacrificionSpriteShip_16: 7060771433925319909
+      SacrificionSpriteShip_17: 9204410886474193803
+      SacrificionSpriteShip_18: 1295116529
+      SacrificionSpriteShip_2: -1720941202236503028
+      SacrificionSpriteShip_3: -2706920949932623026
+      SacrificionSpriteShip_4: 6015885342440938063
+      SacrificionSpriteShip_5: -2464953399551461233
+      SacrificionSpriteShip_6: -1492135048869815632
+      SacrificionSpriteShip_7: -166377373016678497
+      SacrificionSpriteShip_8: -1474235539440938839
+      SacrificionSpriteShip_9: -988048481844381168
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
