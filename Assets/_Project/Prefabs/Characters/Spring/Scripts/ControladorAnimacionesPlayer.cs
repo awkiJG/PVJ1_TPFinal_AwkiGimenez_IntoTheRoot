@@ -26,7 +26,7 @@ public class ControladorAnimacionesPlayer : MonoBehaviour
     void Update()
     {
         // Actualizar estados basados en los componentes de movimiento
-        caminando = movPlayer.GetDireccion() != 0;
+        caminando = movPlayer.Direccion != 0;
         saltando = !saltoPlayer.IsGrounded() && rb.linearVelocity.y > 0;
         cayendo = !saltoPlayer.IsGrounded() && rb.linearVelocity.y < 0;
         agachado = agacharsePlayer.IsCrouching();

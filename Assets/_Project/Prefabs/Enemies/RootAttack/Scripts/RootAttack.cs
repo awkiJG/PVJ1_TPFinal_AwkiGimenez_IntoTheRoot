@@ -89,4 +89,10 @@ public class RootAttack : MonoBehaviour
         // Asegurarse de que quede exacto al final
         transform.position = startPosition;
     }
+
+    public void ResetPosition()
+    {
+        StopAllCoroutines();
+        transform.position = startPosition;
+    }
 }

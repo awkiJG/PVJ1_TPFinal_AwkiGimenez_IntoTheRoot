@@ -16,7 +16,8 @@ MonoBehaviour:
   defaultSap: 0
   defaultHasMap: 0
   defaultHasMosquitoEgg: 0
-  currentLives: 992
+  currentLives: 990
   currentSap: 0
   hasMap: 0
   hasMosquitoEgg: 0
+  maxSap: 10
