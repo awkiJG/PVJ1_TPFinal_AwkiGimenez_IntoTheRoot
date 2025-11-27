@@ -22,9 +22,12 @@ public class MapController : MonoBehaviour
         // Escucha la tecla 'M' 
         if (Input.GetKeyDown(KeyCode.M))
         {
-            // Llama a la función de alternar
-            if (pauseController.IsPaused()) return;
-            ToggleMap();
+            // Llama a la función de alternar y no esta en pausa
+            if (!pauseController.IsPaused())
+            {
+                ToggleMap();
+
+            }
         }
     }
         

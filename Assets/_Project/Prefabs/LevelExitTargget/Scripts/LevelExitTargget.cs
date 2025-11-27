@@ -13,7 +13,7 @@ public class LevelExitTrigger : MonoBehaviour
             indexProximaEscena = SceneManager.GetActiveScene().buildIndex + 1;
             if (escenaActual == "Nivel_1_Arbol")
             {
-                SceneManager.LoadScene(indexProximaEscena);
+                
                 if (PlayerPrefs.GetInt("HighestLevelReached") < 2)
                 {
                 PlayerPrefs.SetInt("HighestLevelReached", 2);
@@ -21,7 +21,6 @@ public class LevelExitTrigger : MonoBehaviour
             }
             else if (escenaActual == "Nivel_2_Raices")
             {
-                SceneManager.LoadScene(indexProximaEscena);
                 if (PlayerPrefs.GetInt("HighestLevelReached") < 3)
                 {
                 PlayerPrefs.SetInt("HighestLevelReached", 3);
@@ -29,12 +28,12 @@ public class LevelExitTrigger : MonoBehaviour
             }
             else if (escenaActual == "Nivel_3_Mosquitos")
             {
-                SceneManager.LoadScene(indexProximaEscena);
                 if (PlayerPrefs.GetInt("HighestLevelReached") < 4)
                 {   
                 PlayerPrefs.SetInt("HighestLevelReached", 4);
                 }
             }
+            SceneManager.LoadScene(indexProximaEscena);
         }
     }
 }
