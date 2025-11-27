@@ -76,11 +76,11 @@ public class FinalLevelFSM : MonoBehaviour
     void Start()
     {
         // 1. Espera inicial
-        Invoke("StartCinematic", 1f); 
+        Invoke("StartCinematic", 2f); 
     }
     void StartCinematic()
     {
-        ChangeState(BossState.APERTURA_CORAZON);
+        ChangeState(BossState.INTRO);
         rootSuperior.SetActive(true);
     }
 
@@ -117,6 +117,7 @@ public class FinalLevelFSM : MonoBehaviour
         // Lógica para la cinemática del corazón
         // Bloquear input del jugador
         GameManager.RequestInputLock(true);
+        movPlayer.Direccion = 0;
         yield return new WaitForSeconds(1f);
         // Cambiar a cámara del corazón
         vCamArena.Priority = 1;
@@ -150,6 +151,7 @@ public class FinalLevelFSM : MonoBehaviour
         // Bloquear input del jugador
         boss.StopBoss();
         GameManager.RequestInputLock(true);
+        movPlayer.Direccion = 0;
         yield return new WaitForSeconds(1f);
         // Cambiar a cámara del corazón
         vCamArena.Priority=1;
@@ -177,6 +179,7 @@ public class FinalLevelFSM : MonoBehaviour
         // Bloquear input del jugador
         boss.StopBoss();
         GameManager.RequestInputLock(true);
+        movPlayer.Direccion = 0;
         yield return new WaitForSeconds(1f);
         // Cambiar a cámara del corazón
         vCamArena.Priority=1;

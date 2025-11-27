@@ -18,6 +18,9 @@ public class CorazonController : MonoBehaviour
     private bool isPlayerInRange = false;
     private bool canInteract = true; // Controla el cooldown
     private int sapDepositedCount = 0;
+    [SerializeField] private Transform sapTransform;
+    [SerializeField] private float sapRiseDistance = 3f;
+    [SerializeField] private float sapReturnDuration = 1.0f;
 
     void Start()
     {
@@ -83,6 +86,9 @@ public class CorazonController : MonoBehaviour
         playerStats.ReleaseSap(1);
         sapDepositedCount++;
 
+        // Ejecutar la animación de la savia (sube instant y vuelve lentamente)
+        StartCoroutine(SapAnimationCoroutine());
+
        
 
         // Si no se alcanzó la victoria, si el estado actual era ESPERANDO_INTERACCION,
@@ -104,6 +110,31 @@ public class CorazonController : MonoBehaviour
         yield return new WaitForSeconds(cooldownTime);
         
         canInteract = true;
+    }
+
+    private IEnumerator SapAnimationCoroutine()
+    {
+        if (sapTransform == null)
+            yield break;
+
+        // Usamos localPosition para mover respecto al padre del transform
+        Vector3 originalPos = sapTransform.localPosition;
+        Vector3 raisedPos = originalPos + Vector3.up * sapRiseDistance;
+
+        // Mover instantáneamente hacia arriba
+        sapTransform.localPosition = raisedPos;
+
+        // Volver lentamente a la posición original en sapReturnDuration segundos
+        float elapsed = 0f;
+        while (elapsed < sapReturnDuration)
+        {
+            elapsed += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsed / sapReturnDuration);
+            sapTransform.localPosition = Vector3.Lerp(raisedPos, originalPos, t);
+            yield return null;
+        }
+
+        sapTransform.localPosition = originalPos;
     }
     
     private void OnTriggerEnter2D(Collider2D collision)
