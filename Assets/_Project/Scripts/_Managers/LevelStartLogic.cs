@@ -7,6 +7,8 @@ public class LevelStartLogic : MonoBehaviour
     [SerializeField] private Rigidbody2D playerRigidbody;
     void Start()
     {
+        GameManager.RequestPauseState(false);
+        GameManager.RequestInputLock(false);
         string nivelAcual = SceneManager.GetActiveScene().name.ToString();
 
         if (nivelAcual == "Nivel_1_Arbol")
