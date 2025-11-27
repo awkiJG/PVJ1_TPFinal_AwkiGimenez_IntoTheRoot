@@ -5,6 +5,7 @@ public class MapController : MonoBehaviour
     [SerializeField] private PlayerStats playerStats;
     [SerializeField] private GameObject mapObject; 
     [SerializeField] private GameObject _HUDPanel; 
+    [SerializeField] private PauseController pauseController;
     private bool isMapOpen = false;
     private void Start()
     {
@@ -22,6 +23,7 @@ public class MapController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.M))
         {
             // Llama a la función de alternar
+            if (pauseController.IsPaused()) return;
             ToggleMap();
         }
     }
@@ -49,5 +51,9 @@ public class MapController : MonoBehaviour
             // Oculta el HUD si el mapa está abierto (y viceversa)
             _HUDPanel.SetActive(!isMapOpen);
         }
+    }
+    public bool IsMapOpen()
+    {
+        return isMapOpen;
     }
 }

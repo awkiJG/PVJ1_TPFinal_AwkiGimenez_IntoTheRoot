@@ -26,6 +26,7 @@ public class MosquitoController : MonoBehaviour
     private void Update()
     {
         // Usamos Update() porque ahora movemos el Transform, no físicas.
+        if (GameManager.IsInputLocked()) return;
         currentStrategy?.Move(this);
     }
 
