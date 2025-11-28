@@ -19,7 +19,7 @@ public class MenuPrincipal : UIPanel
             return;
         }
         botonJugar.onClick.RemoveAllListeners();
-        botonJugar.onClick.AddListener(() => SceneManager.LoadScene("Nivel_1_Arbol"));
+        botonJugar.onClick.AddListener(() => SceneManager.LoadScene("Intro_Scene"));
 
         botonNiveles.onClick.RemoveAllListeners();
         botonNiveles.onClick.AddListener(() => gestor.MostrarPanel(1));

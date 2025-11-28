@@ -285,6 +285,7 @@ MonoBehaviour:
   _patrolSpeed: 2
   _chargeSpeed: 8
   animator: {fileID: 2153274781876996022}
+  audio: {fileID: 8300000, guid: d7f6a6563a6b74143bde13e315ebe07e, type: 3}
 --- !u!61 &2295157484994466690
 BoxCollider2D:
   m_ObjectHideFlags: 0

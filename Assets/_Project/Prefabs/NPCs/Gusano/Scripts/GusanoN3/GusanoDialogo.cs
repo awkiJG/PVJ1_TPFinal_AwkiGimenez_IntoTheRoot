@@ -26,6 +26,7 @@ public class GusanoDialogo : MonoBehaviour
     private IEnumerator DialogoCoroutine(Sprite[] sprites, AudioClip audio)
     {
         dialogo.SetActive(true);
+        AudioManager.Instance.PlaySFX(audio);
         foreach (var sprite in sprites)
         {
             panelDialogo.sprite = sprite;

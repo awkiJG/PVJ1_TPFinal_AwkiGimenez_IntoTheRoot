@@ -4,6 +4,8 @@ using System.Collections;
 
 public class RootAttack : MonoBehaviour
 {
+    [SerializeField] private AudioClip audioCrujir;
+    [SerializeField] private AudioClip audioStocada;
     private Vector3 startPosition;
 
     /// <summary>
@@ -35,6 +37,7 @@ public class RootAttack : MonoBehaviour
     /// </summary>
     private IEnumerator AttackSequence(float distance, float speed, float waitTime)
     {
+        AudioManager.Instance.PlaySFX(audioCrujir);
 
         float tiempoInicio = Time.time;
 
@@ -71,6 +74,7 @@ public class RootAttack : MonoBehaviour
         }
         // Asegurarse de que quede exacto al final
         transform.position = targetPosition; 
+        AudioManager.Instance.PlaySFX(audioStocada);
 
         // --- 4. FASE DE ESPERA ---
         yield return new WaitForSeconds(waitTime);

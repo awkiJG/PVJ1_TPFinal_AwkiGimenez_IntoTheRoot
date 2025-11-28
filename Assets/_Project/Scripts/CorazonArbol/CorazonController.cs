@@ -21,6 +21,7 @@ public class CorazonController : MonoBehaviour
     [SerializeField] private Transform sapTransform;
     [SerializeField] private float sapRiseDistance = 3f;
     [SerializeField] private float sapReturnDuration = 1.0f;
+    [SerializeField] private AudioClip latidoAudio;
 
     void Start()
     {
@@ -154,6 +155,7 @@ public class CorazonController : MonoBehaviour
 
     private void EjecutarAnimacion()
     {
+            AudioManager.Instance.PlaySFX(latidoAudio);
         if (abriendo)
         {
             abriendo = false;

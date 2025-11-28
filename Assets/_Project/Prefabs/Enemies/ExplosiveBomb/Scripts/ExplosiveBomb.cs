@@ -6,6 +6,7 @@ public class ExplosiveBomb : MonoBehaviour
     [SerializeField] private int spikeCount;
     [SerializeField] private float force;
     [SerializeField] private float scale;
+    [SerializeField] private AudioClip audioExplosion;
 
     public void Initialize(int count, float force, float scale)
     {
@@ -18,6 +19,8 @@ public class ExplosiveBomb : MonoBehaviour
 
     private void Explode()
     {
+        AudioManager.Instance.PlaySFX(audioExplosion);
+
         float angleStep = 360f / spikeCount;
 
         // Bucle de Spawneo de Espinas

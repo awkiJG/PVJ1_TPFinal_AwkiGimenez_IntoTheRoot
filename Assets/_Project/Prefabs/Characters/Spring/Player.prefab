@@ -172,6 +172,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d18bc368c49a0734bbe6edcb16c558d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioPaso: {fileID: 8300000, guid: 532106fc6135a2244a71f9ef1c307ea3, type: 3}
+  stepInterval: 0.25
+  groundedYThreshold: 0.1
 --- !u!114 &5547057759048059264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,6 +194,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   groundRadius: 0.5
+  audioSalto: {fileID: 8300000, guid: 369b85479b5348e4588edbe8280fd8b5, type: 3}
 --- !u!114 &1833728087259667321
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -132,3 +132,4 @@ MonoBehaviour:
   spikeCount: 0
   force: 0
   scale: 0
+  audioExplosion: {fileID: 8300000, guid: 2dae0cd0d3d347f488469a851c9850df, type: 3}
