@@ -8,26 +8,28 @@ public class GusanoDialogo : MonoBehaviour
     [SerializeField] private SpriteRenderer panelDialogo;
     [SerializeField] private Sprite[] spritesSaludo;
     [SerializeField] private Sprite[] spritesGracias;
+    [SerializeField] private AudioClip audio1;
+    [SerializeField] private AudioClip audio2;
 
     public void MostrarDialogo()
     {
         if (fsm.CurrentState == GusanoFSM.GusanoState.DIALOGO_INICIAL)
         {
-            StartCoroutine(DialogoCoroutine(spritesSaludo));
+            StartCoroutine(DialogoCoroutine(spritesSaludo, audio1));
         }
         else if (fsm.CurrentState == GusanoFSM.GusanoState.DIALOGO_HUEVO)
         {
-            StartCoroutine(DialogoCoroutine(spritesGracias));
+            StartCoroutine(DialogoCoroutine(spritesGracias, audio2));
         }
     }
 
-    private IEnumerator DialogoCoroutine(Sprite[] sprites)
+    private IEnumerator DialogoCoroutine(Sprite[] sprites, AudioClip audio)
     {
         dialogo.SetActive(true);
         foreach (var sprite in sprites)
         {
             panelDialogo.sprite = sprite;
-            yield return new WaitForSeconds(4f); // Esperar 4 segundos entre cada sprite
+            yield return new WaitForSeconds(5.5f); // Esperar 5.5 segundos entre cada sprite
         }
 
         fsm.ChangeState(

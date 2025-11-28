@@ -28,6 +28,7 @@ public class PlayerStats : ScriptableObject
         currentSap = defaultSap;
         hasMap = defaultHasMap;
         hasMosquitoEgg = defaultHasMosquitoEgg;
+        maxSap = 0;
         
     }
     

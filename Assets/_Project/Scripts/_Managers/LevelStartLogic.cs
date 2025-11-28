@@ -34,5 +34,11 @@ public class LevelStartLogic : MonoBehaviour
             playerStats.SetHasMosquitoEgg(false);
             playerStats.SetCurrentSap(playerStats.GetMaxSap());
         }
+        if (nivelAcual == "MainMenu")
+        {
+            playerStats.ResetToDefaults();
+            GameManager.RequestInputLock(true);
+            GameManager.RequestPauseState(true);
+        }
     }
 }

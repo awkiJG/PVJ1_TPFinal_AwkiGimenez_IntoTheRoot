@@ -10,6 +10,7 @@ public class MenuNiveles : UIPanel
     [SerializeField] private Button botonNivel4;
     [SerializeField] private Button botonAtras;
     [SerializeField] private GestorMenu gestor;
+    [SerializeField] private PlayerStats playerStats;
     public override void Mostrar()
     {
         gameObject.SetActive(true);
@@ -25,10 +26,10 @@ public class MenuNiveles : UIPanel
         botonNivel2.onClick.AddListener(() => SceneManager.LoadScene("Nivel_2_Raices"));
 
         botonNivel3.onClick.RemoveAllListeners();
-        botonNivel3.onClick.AddListener(() => SceneManager.LoadScene("Nivel_3_Mosquitos"));
+        botonNivel3.onClick.AddListener(() => CargarNivel3());
 
         botonNivel4.onClick.RemoveAllListeners();
-        botonNivel4.onClick.AddListener(() => SceneManager.LoadScene("Nivel_4_Purificacion"));
+        botonNivel4.onClick.AddListener(() => CargarNivel4());
 
         botonAtras.onClick.RemoveAllListeners();
         botonAtras.onClick.AddListener(() => gestor.MostrarPanel(0));
@@ -37,6 +38,17 @@ public class MenuNiveles : UIPanel
     public override void Ocultar()
     {
         gameObject.SetActive(false);
+    }
+
+    private void CargarNivel3()
+    {
+        playerStats.SetCurrentSap(6);
+        SceneManager.LoadScene("Nivel_3_Mosquitos");
+    }
+    private void CargarNivel4()
+    {
+        playerStats.SetMaxSap(6);
+        SceneManager.LoadScene("Nivel_4_Purificacion");
     }
     private void OnEnable()
     {
