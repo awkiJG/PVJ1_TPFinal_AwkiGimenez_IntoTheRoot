@@ -4942,6 +4942,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerStats: {fileID: 11400000, guid: 1baaa2bc4d425624fa93cdf08e82e64e, type: 2}
   playerRigidbody: {fileID: 1928796083}
+  musicas:
+  - {fileID: 8300000, guid: cd25a2cc5ca778941b1fee8a8e454571, type: 3}
+  - {fileID: 8300000, guid: b96c399646cacc847bbcc929661a324b, type: 3}
+  - {fileID: 8300000, guid: 03adde130f3325f4b8c2d56f038406a4, type: 3}
+  - {fileID: 8300000, guid: e31d4e36d7fd3d44a9a813992680dc95, type: 3}
 --- !u!114 &1444791147
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class SaltoPlayer : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float groundRadius;
+    [SerializeField] private AudioClip audioSalto;
     void Start()
     {
         // Obtener referencia al Rigidbody2D
@@ -25,6 +26,7 @@ public class SaltoPlayer : MonoBehaviour
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, fuerzaSalto);
+            AudioManager.Instance.PlaySFX(audioSalto);
         }
     }
     

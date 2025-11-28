@@ -1727,6 +1727,7 @@ MonoBehaviour:
   sapTransform: {fileID: 707268450}
   sapRiseDistance: 2
   sapReturnDuration: 0.5
+  latidoAudio: {fileID: 8300000, guid: fb54d4f880b5efd4b9156fca4970346e, type: 3}
 --- !u!61 &482305913
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4961,7 +4962,7 @@ GameObject:
   - component: {fileID: 1784945144}
   - component: {fileID: 1784945143}
   m_Layer: 0
-  m_Name: _GameManager (1)
+  m_Name: _GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4981,6 +4982,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerStats: {fileID: 11400000, guid: 1baaa2bc4d425624fa93cdf08e82e64e, type: 2}
   playerRigidbody: {fileID: 1018952095}
+  musicas:
+  - {fileID: 8300000, guid: cd25a2cc5ca778941b1fee8a8e454571, type: 3}
+  - {fileID: 8300000, guid: b96c399646cacc847bbcc929661a324b, type: 3}
+  - {fileID: 8300000, guid: 03adde130f3325f4b8c2d56f038406a4, type: 3}
+  - {fileID: 8300000, guid: e31d4e36d7fd3d44a9a813992680dc95, type: 3}
 --- !u!114 &1784945144
 MonoBehaviour:
   m_ObjectHideFlags: 0

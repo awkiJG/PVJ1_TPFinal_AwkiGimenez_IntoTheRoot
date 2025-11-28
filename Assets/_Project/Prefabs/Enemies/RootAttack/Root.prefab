@@ -274,6 +274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9253cfd0c1f37e45a1a15e5240b7ff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioCrujir: {fileID: 8300000, guid: bff7c4acf1c8c1842b5a8dea0abbe057, type: 3}
+  audioStocada: {fileID: 8300000, guid: 6f8038d3bbd7833448b12d739c2a9955, type: 3}
 --- !u!1 &7529851744325162436
 GameObject:
   m_ObjectHideFlags: 0

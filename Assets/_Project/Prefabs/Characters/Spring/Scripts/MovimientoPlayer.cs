@@ -6,6 +6,9 @@ public class MovimientoPlayer : MonoBehaviour
     private float direccion;
     private Rigidbody2D rb;
     private bool inputLocked = false;
+    [SerializeField] private AudioClip audioPaso;
+    [SerializeField] private float stepInterval = 0.25f; // segundos entre pasos
+    private float stepTimer = 0f;
 
     void Awake()
     {
@@ -27,14 +30,27 @@ public class MovimientoPlayer : MonoBehaviour
         }
 
         // Aplicar movimiento horizontal usando Rigidbody2D
-        if (direccion != 0)
+        bool isMoving = Mathf.Abs(direccion) > 0.01f;
+
+        if (isMoving)
         {
+            // Reproducir sonido de paso con temporizador para que no suene cada frame
+        
+                stepTimer -= Time.fixedDeltaTime;
+                if (stepTimer <= 0f)
+                {
+                    AudioManager.Instance.PlaySFX(audioPaso);
+                    stepTimer = stepInterval;
+                }
+
             rb.linearVelocity = new Vector2(
                 direccion * velocidad,
                 rb.linearVelocity.y);
         }
         else
         {
+            // Resetear temporizador para que el primer paso suene inmediatamente al volver a moverse
+            stepTimer = 0f;
             rb.linearVelocity = new Vector2(
                 0,
                 rb.linearVelocity.y);

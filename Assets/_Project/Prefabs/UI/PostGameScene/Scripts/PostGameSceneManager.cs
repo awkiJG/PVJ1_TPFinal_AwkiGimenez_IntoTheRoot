@@ -6,8 +6,13 @@ public class PostGameSceneManager : MonoBehaviour
 {
     [SerializeField] private Animator animatorFader;
     private bool isLoading = false;
+    [SerializeField] private AudioClip music;
 
     // Update is called once per frame
+    void Start()
+    {
+        AudioManager.Instance.PlayMusic(music);
+    }
     void Update()
     {
         if (isLoading) return;

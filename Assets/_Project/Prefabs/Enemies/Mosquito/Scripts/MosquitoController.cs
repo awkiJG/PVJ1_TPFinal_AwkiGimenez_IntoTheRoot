@@ -17,6 +17,7 @@ public class MosquitoController : MonoBehaviour
     private IMovimientoEstrategia currentStrategy;
     private readonly EstrategiaPatrulla stratPatrulla = new EstrategiaPatrulla();
     private readonly EstrategiaEmbestida stratEmbestida = new EstrategiaEmbestida();
+    [SerializeField] private AudioClip audio;
 
     private void Start()
     {
@@ -51,6 +52,8 @@ public class MosquitoController : MonoBehaviour
     // --- Método Público para el Sensor ---
     public void Embestir(Transform player)
     {
+        
+        AudioManager.Instance.PlaySFX(audio);
         if (currentStrategy == stratEmbestida) return;
 
         // Calcular dirección hacia el jugador
