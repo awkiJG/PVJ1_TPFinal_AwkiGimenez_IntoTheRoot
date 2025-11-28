@@ -69,4 +69,42 @@ public class MenuNiveles : UIPanel
         // El Nivel 4 solo si el progreso es 4 o más
         botonNivel4.interactable = (highestLevel >= 4);
     }
+    /*private void Update()
+    {
+        // Presiona F1 para resetear el progreso
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            Debug.Log("TEST: Progreso reseteado a Nivel 1.");
+            PlayerPrefs.SetInt("HighestLevelReached", 1);
+            PlayerPrefs.Save(); // Guardar el cambio
+            OnEnable(); // Actualizar los botones al instante
+        }
+
+        // Presiona F2 para desbloquear el Nivel 2
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            Debug.Log("TEST: Desbloqueando Nivel 2.");
+            PlayerPrefs.SetInt("HighestLevelReached", 2);
+            PlayerPrefs.Save();
+            OnEnable();
+        }
+
+        // Presiona F3 para desbloquear el Nivel 3
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            Debug.Log("TEST: Desbloqueando Nivel 3.");
+            PlayerPrefs.SetInt("HighestLevelReached", 3);
+            PlayerPrefs.Save();
+            OnEnable();
+        }
+
+        // Presiona F4 para desbloquear el Nivel 4
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            Debug.Log("TEST: Desbloqueando Nivel 4.");
+            PlayerPrefs.SetInt("HighestLevelReached", 4);
+            PlayerPrefs.Save();
+            OnEnable();
+        }
+    }*/
 }

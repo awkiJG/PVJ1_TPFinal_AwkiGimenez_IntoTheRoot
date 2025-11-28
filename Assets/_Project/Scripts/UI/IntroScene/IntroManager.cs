@@ -48,4 +48,12 @@ public class IntroManager : MonoBehaviour
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("Nivel_1_Arbol");
     }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            StopAllCoroutines();
+            SceneManager.LoadScene("MainMenu");
+        }
+    }
 }

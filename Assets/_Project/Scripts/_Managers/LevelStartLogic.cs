@@ -44,6 +44,7 @@ public class LevelStartLogic : MonoBehaviour
             playerStats.ResetToDefaults();
             GameManager.RequestInputLock(false);
             GameManager.RequestPauseState(false);
+            AudioManager.Instance.PlayMusic(musicas[4]);
         }
     }
 }
