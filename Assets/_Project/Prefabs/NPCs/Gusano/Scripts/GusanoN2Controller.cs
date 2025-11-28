@@ -9,6 +9,7 @@ public class GusanoN2Controller : MonoBehaviour
     [SerializeField] private GameObject interactPrompt;
     [SerializeField] private GameObject tapaTunel;
     [SerializeField] private Animator animator;
+    [SerializeField] private AudioClip audio;
     // --- Variables de Estado (Privadas) ---
     private bool jugadorEnRango = false;
     private bool haSaludado = false;
@@ -81,7 +82,7 @@ public class GusanoN2Controller : MonoBehaviour
         else
             Debug.LogWarning("GusanoN2Controller: 'panelDialogo' no asignado al intentar mostrar saludo.");
 
-        yield return new WaitForSeconds(1f);
+        AudioManager.Instance.PlaySFX(audio);
         // Iterar sobre todos los sprites en el array
         foreach (Sprite spriteMsg in spritesDialogo)
         {
@@ -89,7 +90,7 @@ public class GusanoN2Controller : MonoBehaviour
                 imagenDialogo.sprite = spriteMsg;
             else
                 Debug.LogWarning("GusanoN2Controller: 'imagenDialogo' no asignado; no se puede mostrar sprite de diálogo.");
-            yield return new WaitForSeconds(4f);
+            yield return new WaitForSeconds(5f);
         }
         // Saludo terminado
         puedeInteractuar = true; // Ahora sí puede presionar 'E'

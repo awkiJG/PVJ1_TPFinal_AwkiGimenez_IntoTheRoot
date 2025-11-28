@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
     {
         IsPaused = isPaused;
         Time.timeScale = isPaused ? 0f : 1f;
+        AudioListener.pause = isPaused;
     }
 
     private void SetInputLock(bool isLocked)

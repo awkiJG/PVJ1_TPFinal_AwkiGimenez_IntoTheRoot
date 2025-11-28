@@ -10,6 +10,7 @@ public class StrokeController : MonoBehaviour
     [SerializeField] private GameObject dialogo;
     [SerializeField] private SpriteRenderer panelDialogo;
     [SerializeField] private Sprite[] spritesMensaje;
+    [SerializeField] private AudioClip audio;
 
     void FixedUpdate()
     {
@@ -25,11 +26,13 @@ public class StrokeController : MonoBehaviour
 
     public IEnumerator MostrarMensajeCoroutine()
     {
+        AudioManager.Instance.PlaySFX(audio);
         dialogo.SetActive(true);
+        
         foreach (var sprite in spritesMensaje)
         {
             panelDialogo.sprite = sprite;
-            yield return new WaitForSeconds(4f); // Esperar 4 segundos entre cada sprite
+            yield return new WaitForSeconds(5f); // Esperar 4 segundos entre cada sprite
         }
         dialogo.SetActive(false);
     }

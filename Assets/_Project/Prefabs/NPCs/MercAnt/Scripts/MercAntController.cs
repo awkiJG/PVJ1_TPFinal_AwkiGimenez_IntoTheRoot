@@ -11,6 +11,7 @@ public class MercAntController : MonoBehaviour
     private bool haSaludado = false;
     private bool puedeInteractuar = false;
     private Coroutine dialogoCoroutine = null;
+    [SerializeField] private AudioClip audio;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -61,12 +62,13 @@ public class MercAntController : MonoBehaviour
         haSaludado = true;
         panelDialogo.SetActive(true); // Mostrar la caja de diálogo
 
+        AudioManager.Instance.PlaySFX(audio);
         // Iterar sobre todos los sprites en el array
         foreach (Sprite spriteMsg in spritesDialogo)
         {
             // Actualizar la imagen del diálogo
             imagenDialogo.sprite = spriteMsg;
-            yield return new WaitForSeconds(4f);
+            yield return new WaitForSeconds(6f);
         }
 
         // Saludo terminado
